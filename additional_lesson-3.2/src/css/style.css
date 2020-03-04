@@ -1,0 +1,178 @@
+/* common */
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* main - styles */
+
+.main {
+  background-color: #006a00;
+  padding: 120px 0;
+}
+
+.container {
+  max-width: 1314px;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.subheader {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card {
+  box-shadow: 0 14px 21px rgba(0, 0, 0, 0.17);
+  background-color: #ffffff;
+}
+
+.card__header {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1a1820;
+}
+
+.card__price-text {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1a1820;
+}
+
+.card__price-number {
+  font-size: 30px;
+}
+
+.list__element-checked {
+  color: #26650a;
+}
+
+.element {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #1a1820;
+}
+
+.button {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  border: 1px solid #ffba15;
+  background-color: #ffb504;
+  background-image: linear-gradient(to top, #f5ad00 0%, #ffb504 100%);
+}
+
+/* main-positionning */
+
+.content__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content__subheader {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.content__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 50px;
+}
+
+.card__header {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.card__image {
+  margin-bottom: 37px;
+}
+
+.card__price-text {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.card__list {
+  height: 145px;
+  margin-bottom: 22px;
+}
+
+.list__element {
+  display: block;
+  text-align: center;
+}
+
+
+.card__button {
+  align-self: center;
+  padding: 26px 58px;
+}
+
+.content__card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main {
+  margin-bottom: 50px;
+}
+
+/* adds-styles */
+
+.adds {
+  background-color: #006b00;
+  padding: 120px 0;
+}
+
+
+/* adds-positioning */
+
+.adds__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.adds__subheader {
+  text-align: center;
+  margin-bottom: 93px;
+}
+
+.buttons-block__button {
+  padding: 15px 50px;
+}
+
+.adds__image-block {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 49px;
+}
+
+.adds__buttons-block {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 37px;
+}
