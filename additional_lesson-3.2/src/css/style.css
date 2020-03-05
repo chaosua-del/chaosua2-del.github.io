@@ -12,6 +12,12 @@ img {
   max-width: 100%;
 }
 
+.body__empty {
+  display: block;
+  background-color: #ffffff;
+  height: 50px;
+}
+
 /* main - styles */
 
 .main {
@@ -135,10 +141,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.main {
-  margin-bottom: 50px;
 }
 
 /* adds-styles */
