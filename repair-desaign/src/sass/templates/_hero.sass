@@ -7,6 +7,12 @@
   flex-direction: column
   justify-content: center
   padding-top: 100px
+  &::before
+    content: ''
+    position: absolute
+    height: 100%
+    width: 100%
+    background-color: rgba($dark, 0.7)
   &__instagram
     max-width: 82px
     height: 100%
@@ -15,6 +21,7 @@
     top: 0
   &__content
     max-width: 670px
+    position: relative
   &__text
     font-family: FuturaBookC
     font-style: normal
@@ -42,6 +49,16 @@
     line-height: 138.6%
     text-transform: uppercase
     color: $light
+    &::after
+      content: ''
+      margin-left: 15px
+      width: 30px
+      height: 30px
+      border: 2px solid $primary
+      border-radius: 50%
+      background: url('../img/arrow-down.svg') no-repeat center
+
+
  
   
 
@@ -55,6 +72,18 @@
     color: $primary
     font-family: FuturaDemiC
     transform: rotate(90deg)
+    display: flex
+    align-items: center
+    line-height: 0.7
+    &:after
+      content: ''
+      height: 1px
+      width: 50px
+      background-color: $primary
+      margin-left: 8px
+      
+
+      
 
 .title
   margin: 0

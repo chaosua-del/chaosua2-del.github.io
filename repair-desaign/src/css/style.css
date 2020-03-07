@@ -379,10 +379,23 @@ button {
   border-radius: 2px;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button--primary {
   background: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.button--primary:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button--outline {
@@ -428,6 +441,12 @@ button {
   font-family: FuturaBookC;
   font-style: normal;
   font-weight: normal;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.nav__item:hover {
+  color: #E3B873;
 }
 
 .phone {
@@ -461,6 +480,14 @@ button {
   padding-top: 100px;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+}
+
 .hero__instagram {
   max-width: 82px;
   height: 100%;
@@ -471,6 +498,7 @@ button {
 
 .hero__content {
   max-width: 670px;
+  position: relative;
 }
 
 .hero__text {
@@ -512,6 +540,16 @@ button {
   color: #ffffff;
 }
 
+.hero__scroll-down::after {
+  content: '';
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+  background: url("../img/arrow-down.svg") no-repeat center;
+}
+
 .instagram {
   background: #131313;
   display: -webkit-box;
@@ -531,6 +569,21 @@ button {
   font-family: FuturaDemiC;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0.7;
+}
+
+.instagram__link:after {
+  content: '';
+  height: 1px;
+  width: 50px;
+  background-color: #E3B873;
+  margin-left: 8px;
 }
 
 .title {
