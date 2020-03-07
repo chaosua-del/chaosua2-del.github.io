@@ -355,6 +355,20 @@ template {
   display: none;
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -401,6 +415,33 @@ button {
 .button--outline {
   border: 1px solid #FFFFFF;
   background: transparent;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursiv;
+}
+
+.section-title__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title__image:before, .section-title__image::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #E3B873;
+  border-radius: 30px;
+  margin: 0 10px;
 }
 
 .header {
@@ -483,6 +524,8 @@ button {
 .hero::before {
   content: '';
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(19, 19, 19, 0.7);
@@ -598,19 +641,5 @@ button {
 
 .title--primary {
   color: #E3B873;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-}
-
-body {
-  font-family: sans-serif;
-  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
