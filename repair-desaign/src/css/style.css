@@ -410,11 +410,16 @@ button {
 .button--primary:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
+  background: #d89c3c;
 }
 
 .button--outline {
   border: 1px solid #FFFFFF;
   background: transparent;
+}
+
+.button--outline:hover {
+  background: #131313;
 }
 
 .section-title {
