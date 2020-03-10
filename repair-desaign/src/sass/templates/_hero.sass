@@ -26,7 +26,9 @@
     position: relative
     margin-left: 4.28rem
   &__text
-    font-family: FuturaBookC
+    margin-top: 1.28rem
+    margin-bottom: 3rem
+    font-family: 'Futura Book'
     font-style: normal
     font-weight: normal
     font-size: 1.57rem
@@ -34,7 +36,10 @@
     max-width: 36rem
   &__button
     padding: 19px 23px
-    margin-right: 20px
+    &--primary
+      margin-right: 1.2rem
+    &--outline
+      padding: 19px 41px
   &__scroll-down
     position: absolute
     left: 0
@@ -73,17 +78,17 @@
   &__link
     text-transform: uppercase
     color: $primary
-    font-family: FuturaDemiC
+    font-family: 'Futura Demi'
     transform: rotate(90deg)
     display: flex
     align-items: center
-    line-height: 0.7
+    line-height: 0.7px
     &:after
       content: ''
       height: 1px
       width: 50px
       background-color: $primary
-      margin-left: 8px
+      margin-left: 16px
       
 
       

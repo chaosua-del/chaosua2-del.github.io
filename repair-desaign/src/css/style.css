@@ -390,7 +390,7 @@ button {
 .button {
   text-transform: uppercase;
   color: #ffffff;
-  font-family: FuturaDemiC;
+  font-family: 'Futura Demi';
   font-weight: 500;
   font-size: 0.93rem;
   line-height: 15px;
@@ -477,8 +477,9 @@ button {
 
 .logo {
   color: #E3B873;
+  font-size: 1.075rem;
   text-transform: uppercase;
-  font-family: FuturaDemiC;
+  font-family: 'Futura Book';
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
@@ -486,9 +487,10 @@ button {
 
 .nav__item {
   color: #ffffff;
+  font-size: 1rem;
   margin-right: 2.857rem;
   text-transform: uppercase;
-  font-family: FuturaBookC;
+  font-family: 'Futura Book';
   font-style: normal;
   font-weight: normal;
   -webkit-transition: color 0.2s;
@@ -502,14 +504,15 @@ button {
 .phone {
   color: #E3B873;
   text-decoration: underline;
-  font-family: FuturaDemiC;
+  font-size: 1rem;
+  font-family: 'Futura Demi';
   font-style: normal;
   font-weight: 500;
   margin-right: 45px;
 }
 
 .contacts__button {
-  padding: 14px 20px;
+  padding: 11px 20px;
 }
 
 .hero {
@@ -555,7 +558,9 @@ button {
 }
 
 .hero__text {
-  font-family: FuturaBookC;
+  margin-top: 1.28rem;
+  margin-bottom: 3rem;
+  font-family: 'Futura Book';
   font-style: normal;
   font-weight: normal;
   font-size: 1.57rem;
@@ -565,7 +570,14 @@ button {
 
 .hero__button {
   padding: 19px 23px;
-  margin-right: 20px;
+}
+
+.hero__button--primary {
+  margin-right: 1.2rem;
+}
+
+.hero__button--outline {
+  padding: 19px 41px;
 }
 
 .hero__scroll-down {
@@ -619,7 +631,7 @@ button {
 .instagram__link {
   text-transform: uppercase;
   color: #E3B873;
-  font-family: FuturaDemiC;
+  font-family: 'Futura Demi';
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   display: -webkit-box;
@@ -628,7 +640,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 0.7;
+  line-height: 0.7px;
 }
 
 .instagram__link:after {
@@ -636,7 +648,7 @@ button {
   height: 1px;
   width: 50px;
   background-color: #E3B873;
-  margin-left: 8px;
+  margin-left: 16px;
 }
 
 .title {
