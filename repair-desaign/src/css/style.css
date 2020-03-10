@@ -430,6 +430,10 @@ button {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Yeseva One', cursiv;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .section-title__image {
@@ -665,7 +669,7 @@ button {
   color: #E3B873;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
   html {
     font-size: 12px;
   }
@@ -704,14 +708,30 @@ button {
   .hero__content {
     max-width: 22.86rem;
   }
+  .hero__title {
+    line-height: 132.83%;
+  }
   .hero__text {
     font-size: 1.29rem;
     margin-bottom: 2.28rem;
+    line-height: 135.84%;
   }
   .hero__button {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero__content {
+    min-width: 100%;
+  }
+  .hero__button {
+    min-width: 100%;
+  }
+  .hero__text {
+    max-width: 90%;
   }
 }
 
