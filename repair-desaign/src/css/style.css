@@ -377,6 +377,10 @@ section {
   padding: 60px 0;
 }
 
+h2 {
+  font-weight: normal;
+}
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -435,7 +439,8 @@ button {
   text-transform: uppercase;
   font-family: 'Yeseva One', cursiv;
   font-size: 0.95rem;
-  line-height: 2rem;
+  line-height: 120%;
+  font-weight: normal;
 }
 
 .section-title__image {
@@ -479,6 +484,17 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .logo {
@@ -635,6 +651,7 @@ button {
 }
 
 .instagram__link {
+  font-size: 1rem;
   text-transform: uppercase;
   color: #E3B873;
   font-family: 'Futura Demi';
@@ -785,6 +802,17 @@ button {
 }
 
 @media screen and (max-width: 570px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
@@ -817,7 +845,7 @@ button {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .hero__content {
     min-width: 100%;
   }
@@ -825,7 +853,10 @@ button {
     min-width: 100%;
   }
   .hero__text {
-    max-width: 90%;
+    max-width: 22.86rem;
+  }
+  .hero__title {
+    max-width: 22.86rem;
   }
 }
 
