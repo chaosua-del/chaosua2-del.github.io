@@ -381,6 +381,10 @@ h2 {
   font-weight: normal;
 }
 
+.row {
+  z-index: 90;
+}
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -462,6 +466,15 @@ button {
   background-color: #E3B873;
   border-radius: 30px;
   margin: 0 10px;
+}
+
+.section-description {
+  font-family: 'Futura Book';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.43rem;
+  line-height: 1.93rem;
+  text-align: center;
 }
 
 .header {
@@ -762,22 +775,27 @@ button {
   padding: 1.1rem 3rem;
 }
 
-@media screen and (max-width: 760px) {
-  .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .types__card {
-    margin-bottom: 5rem;
-  }
-  .card__text {
-    margin-left: 0;
-  }
+.design-project__section-description {
+  max-width: 59%;
+  display: block;
+  margin: 0 auto;
+  color: #363636;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.design-project__image {
+  position: relative;
+}
+
+.design-project__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(19, 19, 19, 0.3);
 }
 
 @media screen and (max-width: 1350px) {
@@ -797,6 +815,39 @@ button {
     margin-left: 0;
   }
   .nav {
+    display: none;
+  }
+  .card__title {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .types__card {
+    margin-bottom: 5rem;
+  }
+  .card__text {
+    margin-left: 0;
+  }
+  .design-project__card {
+    margin-bottom: 5rem;
+  }
+  .card__text {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-height: 590px) {
+  .hero__scroll-down {
     display: none;
   }
 }
@@ -857,12 +908,6 @@ button {
   }
   .hero__title {
     max-width: 22.86rem;
-  }
-}
-
-@media screen and (max-height: 590px) {
-  .hero__scroll-down {
-    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
