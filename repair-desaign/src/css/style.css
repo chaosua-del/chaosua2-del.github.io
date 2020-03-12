@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Futura Medium';
+  src: url("../fonts/FuturaMediumC.woff") format("woff"), url("../fonts/FuturaMediumC.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -377,7 +384,7 @@ section {
   padding: 60px 0;
 }
 
-h2 {
+h2, h3, h4 {
   font-weight: normal;
 }
 
@@ -475,6 +482,62 @@ button {
   font-size: 1.43rem;
   line-height: 1.93rem;
   text-align: center;
+}
+
+.label {
+  font-family: 'Futura Book';
+}
+
+.label--light {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid;
+  background-color: transparent;
+  padding: 0.5rem 0;
+}
+
+.policy {
+  position: relative;
+}
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 1.285rem;
+  height: 1.285rem;
+  margin-top: 7px;
+  margin-right: 9px;
+}
+
+.policy__checkbox:checked + .policy__label::before {
+  content: '';
+  background: #E3B873 url("../img/checked.svg") no-repeat center;
+}
+
+.policy__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: 'Futura Book';
+  font-size: 1.142rem;
+  margin-bottom: 40px;
+}
+
+.policy__label::before {
+  content: '';
+  margin-top: 6px;
+  width: 1.285rem;
+  height: 1.285rem;
+  border: 1px solid #E3B873;
+  border-radius: 1px;
+  margin-right: 9px;
 }
 
 .header {
@@ -812,6 +875,117 @@ button {
   min-height: 98.2%;
   min-width: 100%;
   background-color: rgba(19, 19, 19, 0.3);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 199;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 19, 19, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__dialog {
+  position: relative;
+  background: #131313 url("../img/bg-lines.svg") center no-repeat;
+  padding: 1rem 3.5rem 1.928rem 3.5rem;
+  color: #ffffff;
+  max-width: 36.36rem;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: transparent url("../img/close.svg") no-repeat center;
+  border: none;
+  outline: none;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-family: Yeseva One , cursiv;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.357rem;
+  line-height: 1.857rem;
+  text-align: center;
+  margin-bottom: 1.9rem;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 18px 47px;
+  border-radius: 0;
+}
+
+.modal .form__label {
+  font-size: 1.07rem;
+  margin-bottom: 0rem;
+}
+
+.modal .form__input {
+  border-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 3.3rem;
+  font-family: 'Futura Medium';
+  font-size: 1.285rem;
+  color: #ffffff;
+}
+
+.modal .form__input:last-of-type {
+  margin-bottom: 0.75rem;
+}
+
+.modal .form__input::-webkit-input-placeholder {
+  font-family: 'Futura Medium';
+  font-size: 1.285rem;
+  color: #ffffff;
+}
+
+.modal .form__input:-ms-input-placeholder {
+  font-family: 'Futura Medium';
+  font-size: 1.285rem;
+  color: #ffffff;
+}
+
+.modal .form__input::-ms-input-placeholder {
+  font-family: 'Futura Medium';
+  font-size: 1.285rem;
+  color: #ffffff;
+}
+
+.modal .form__input::placeholder {
+  font-family: 'Futura Medium';
+  font-size: 1.285rem;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1350px) {
