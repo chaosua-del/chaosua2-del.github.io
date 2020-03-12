@@ -19,6 +19,10 @@
 
     // types
   .card
+    &__image
+    &__text
+      margin-top: -2rem
+      margin: 0 auto
     &__title
       max-width: 50%
       
@@ -31,9 +35,13 @@
   .types
     &__card
       margin-bottom: 5rem
+
   .card
     &__text
+      margin-top: -14rem
       margin-left: 0
+    &__title
+      max-width: 100%
   
   // design-project
     .row
@@ -54,14 +62,13 @@
       margin-left: 0
 
     
-  
-
-
 
 @media screen and ( max-height: 590px )
+  // hero
   .hero
     &__scroll-down
       display: none
+    
 
 @media screen and ( max-width: 570px )
   .contacts
@@ -108,7 +115,8 @@
       max-width: 22.86rem
     
   
-
-
-  
+@media screen and ( max-height: 400px )
+  .hero
+    &__button
+      display: none
   

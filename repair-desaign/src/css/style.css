@@ -834,6 +834,10 @@ button {
   .nav {
     display: none;
   }
+  .card__text {
+    margin-top: -2rem;
+    margin: 0 auto;
+  }
   .card__title {
     max-width: 50%;
   }
@@ -853,7 +857,11 @@ button {
     margin-bottom: 5rem;
   }
   .card__text {
+    margin-top: -14rem;
     margin-left: 0;
+  }
+  .card__title {
+    max-width: 100%;
   }
   .design-project__card {
     margin-bottom: 5rem;
@@ -935,6 +943,12 @@ button {
   }
   .hero__title {
     max-width: 22.86rem;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .hero__button {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
