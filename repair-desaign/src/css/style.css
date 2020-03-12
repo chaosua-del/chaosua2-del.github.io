@@ -802,7 +802,6 @@ button {
 .design-project__image {
   position: relative;
   display: block;
-  width: 98%;
 }
 
 .design-project__image::before {
@@ -835,8 +834,8 @@ button {
     display: none;
   }
   .card__text {
-    margin-top: -2rem;
-    margin: 0 auto;
+    margin-top: -0.5rem;
+    min-width: 100%;
   }
   .card__title {
     max-width: 50%;
