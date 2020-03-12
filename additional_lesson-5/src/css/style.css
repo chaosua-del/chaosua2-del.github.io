@@ -26,7 +26,7 @@ fieldset {
 }
 
 body {
-  background: #ebf4f4;
+  background: url("../img/bg.jpg");
 }
 
 .container {
@@ -35,8 +35,9 @@ body {
 }
 
 .form {
-  margin-left: 100px;
-  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
   position: relative;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
@@ -90,7 +91,7 @@ body {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
   border: 1px solid #cfdede;
-  background: #e6f1f1;
+  background: url("../img/bg.jpg");
   padding: 7px;
   margin-bottom: 16px;
 }
