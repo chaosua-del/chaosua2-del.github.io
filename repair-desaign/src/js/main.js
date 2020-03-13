@@ -3,15 +3,23 @@ $(document).ready(function () {
   var modal = $('.modal'),
     modalBtn = $('.button'),
     closeBtn = $('.modal__close');
+  var dialog = $(".modal__dialog");
 
   // on click we toggle class for modal 
   modalBtn.on('click', function () {
-    modal.toggleClass('modal--visible');
+    modal.show();
   });
 
   // on click we toggle class for modal
   closeBtn.on('click', function () {
-    modal.toggleClass('modal--visible');
+    modal.hide();
+  });
+
+  // if we click out of dialog window we close modal
+  $(document).mouseup(function (e) {
+    if (!dialog.is(e.target) && dialog.has(e.target).length === 0) {
+      modal.hide();
+    }
   });
 
 
