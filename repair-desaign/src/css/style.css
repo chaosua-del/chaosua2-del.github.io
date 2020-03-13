@@ -553,6 +553,7 @@ button {
           transform: rotate(180deg);
   outline: none;
   cursor: pointer;
+  display: none;
 }
 
 .header {
