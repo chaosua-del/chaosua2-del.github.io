@@ -5,6 +5,8 @@ $(document).ready(function () {
     closeBtn = $('.modal__close');
   var dialog = $(".modal__dialog");
 
+
+
   // on click we toggle class for modal 
   modalBtn.on('click', function () {
     modal.show();
@@ -43,3 +45,26 @@ $(document).ready(function () {
   });
 
 });
+
+// на чистом джава скрипт будет так
+// document.addEventListener("DomContentLoaded", function () {
+//   var modal = document.getElementsByClassName('modal');
+//   var modal = document.querySelectorAll('.button');
+//   var modal = document.getElementsByClassName('modal__close');
+//   var modal = document.getElementsByClassName('modal__dialog');
+
+//   modalBtn.addEventListener("click", function () {
+//     modal.style.display = "block";
+//   });
+
+//   closeBtn.addEventListener("click", function () {
+//     modal.style.display = "none";
+//   });
+
+//   document.addEventListener("click", function (e) {
+//     if (!dialog.is(e.target) && dialog.has(e.target).length === 0) {
+//       modal.style.display = "none";
+//     }
+//   });
+
+// });
