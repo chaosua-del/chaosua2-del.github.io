@@ -556,6 +556,10 @@ button {
   display: none;
 }
 
+.card__image {
+  display: block;
+}
+
 .header {
   background-color: #131313;
   padding: 24px 0;
@@ -883,16 +887,6 @@ button {
   display: block;
 }
 
-.design-project__image::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 98.2%;
-  min-width: 100%;
-  background-color: rgba(19, 19, 19, 0.3);
-}
-
 .modal {
   position: fixed;
   left: 0;
@@ -1033,9 +1027,6 @@ button {
     margin-top: -0.5rem;
     min-width: 100%;
   }
-  .card__title {
-    max-width: 50%;
-  }
 }
 
 @media screen and (max-width: 760px) {
@@ -1051,13 +1042,6 @@ button {
   .types__card {
     margin-bottom: 5rem;
   }
-  .card__text {
-    margin-top: -14rem;
-    margin-left: 0;
-  }
-  .card__title {
-    max-width: 100%;
-  }
   .design-project__card {
     margin-bottom: 5rem;
   }
@@ -1070,6 +1054,11 @@ button {
   }
   .design-project__section-description {
     color: #ffffff;
+  }
+  .card__text {
+    margin-top: -10rem;
+    min-width: 80%;
+    margin-left: 0;
   }
 }
 
@@ -1135,19 +1124,6 @@ button {
   }
   .hero__title {
     max-width: 22.86rem;
-  }
-  .card {
-    position: relative;
-    margin-bottom: 20rem;
-  }
-  .card__text {
-    position: absolute;
-    left: -1px;
-    margin-top: -9rem;
-    min-width: 75%;
-  }
-  .card__title {
-    max-width: 50%;
   }
 }
 
