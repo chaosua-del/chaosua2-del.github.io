@@ -1071,9 +1071,6 @@ button {
   .design-project__section-description {
     color: #ffffff;
   }
-  .card__text {
-    margin-left: 0;
-  }
 }
 
 @media screen and (max-height: 590px) {
@@ -1138,6 +1135,19 @@ button {
   }
   .hero__title {
     max-width: 22.86rem;
+  }
+  .card {
+    position: relative;
+    margin-bottom: 20rem;
+  }
+  .card__text {
+    position: absolute;
+    left: -1px;
+    margin-top: -9rem;
+    min-width: 75%;
+  }
+  .card__title {
+    max-width: 50%;
   }
 }
 

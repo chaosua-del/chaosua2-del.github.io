@@ -19,7 +19,6 @@
 
     // types
   .card
-    &__image
     &__text
       margin-top: -0.5rem
       min-width: 100%
@@ -57,9 +56,6 @@
       color: $light
     &__section-description
       color: $light
-  .card
-    &__text
-      margin-left: 0
 
     
 
@@ -113,6 +109,19 @@
       max-width: 22.86rem
     &__title
       max-width: 22.86rem
+
+  .card
+    position: relative
+    margin-bottom: 20rem
+    &__text
+      position: absolute
+      left: -1px
+      margin-top: -9rem
+      min-width: 75%
+    &__title
+      max-width: 50%
+
+  
     
   
 @media screen and ( max-height: 400px )
