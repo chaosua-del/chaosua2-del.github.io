@@ -30,11 +30,38 @@ button
 .section
   &-title
     text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva One', cursiv
-    font-size: 0.95rem
-    line-height: 120%
-    font-weight: normal
+    &__heading
+      text-transform: uppercase
+      font-family: 'Yeseva One', cursiv
+      font-size: 1.428rem
+      font-weight: normal
+      line-height: 2.65rem
+      position: relative
+      margin-top: 0
+      &--primary
+        color: $primary
+        font-size: 1.928rem
+      &--letterspaced
+        letter-spacing: -0.14rem
+    &--left
+      text-align: left
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        height: 1px
+        width: 6.57rem
+        background: $primary
+        margin-left: 2.5rem
+    &__text
+      font-size: 1.285rem
+      font-family: 'Futura Book'
+      text-transform: none
+      font-weight: normal
+      line-height: 2.07rem
+      max-width: 31.57rem
+      margin-bottom: 3.5rem
     &__image
       display: flex
       justify-content: center
@@ -46,16 +73,16 @@ button
         background-color: $primary
         border-radius: 30px
         margin: 0 10px
-        
-
-        
-.section-description
-  font-family: 'Futura Book'
-  font-style: normal
-  font-weight: normal
-  font-size: 1.43rem
-  line-height: 1.93rem
-  text-align: center
+  &-description
+    font-family: 'Futura Book'
+    font-style: normal
+    font-weight: normal
+    font-size: 1.43rem
+    line-height: 1.93rem
+    text-align: center
+  &--dark
+    background: $dark
+    color: $light
 
 .label
   font-family: 'Futura Book' 

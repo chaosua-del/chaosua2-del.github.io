@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
 
   <!-- styles -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Document</title>
@@ -57,6 +58,90 @@
     </section>
     <!-- /.hero -->
 
+    <section class="section section--dark projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-40 projects__info">
+            <div class="section-title section-title--left">
+              <h2 class="section-title__heading section-title__heading--primary section-title__heading--letterspaced">
+                Завершенные <span class="section-title__word">проекты</span></h2>
+              <!-- /.section-title__heading -->
+              <p class="section-title__text">
+                На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на
+                строительном рынке
+                мы осчастливили более 1000 семей
+              </p>
+              <!-- /.section__title-text -->
+            </div>
+            <!-- /.section-title -->
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper swiper-no-swiping">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text">
+                    <h2 class="swiper-slide__heading">Город:</h2>
+                    <span class="swiper-slide__value">Ростов-на-Дону</span>
+                    <span class="swiper-slide__value">ЖК Адмирал</span>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+
+                  <div class="swiper-slide__text">
+                    <h2 class="swiper-slide__heading">Площадь:</h2>
+                    <span class="swiper-slide__value">81 м2</span>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+
+                  <div class="swiper-slide__text">
+                    <h2 class="swiper-slide__heading">Срок ремонта:</h2>
+                    <span class="swiper-slide__value">3,5 месяца</span>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+
+                  <div class="swiper-slide__text">
+                    <h2 class="swiper-slide__heading">Стоимость:</h2>
+                    <span class="swiper-slide__value">По запросу</span>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-button-next"></div>
+
+            </div>
+          </div>
+          <!-- /.col-40 -->
+          <div class="col-60 projects__image-block">
+            <div class="swiper-container">
+              <div class="swiper-wrapper swiper-no-swiping">
+                <div class="swiper-slide">
+                  <img src="img/project/image-1.jpg" alt="image" class="projects__image">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/project/image-1.jpg" alt="image" class="projects__image">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/project/image-1.jpg" alt="image" class="projects__image">
+                </div>
+              </div>
+              <!-- ./swiper-wrapper -->
+            </div>
+          </div>
+          <!-- ./col-40 -->
+        </div>
+        <!-- ./row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section section--dark projects -->
 
     <section class="types">
       <div class="container">
@@ -72,7 +157,7 @@
         <!-- /.section-title -->
 
         <div class="row types__row">
-          <div class="col">
+          <div class="col-30">
             <div class="card types__card">
               <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
               <div class="card__text">
@@ -103,7 +188,7 @@
           </div>
 
           <!-- /.col -->
-          <div class="col">
+          <div class="col-30">
             <div class="card types__card">
               <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
               <div class="card__text">
@@ -134,7 +219,7 @@
           </div>
           <!-- /.col -->
 
-          <div class="col">
+          <div class="col-30">
             <div class="card types__card">
               <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
               <div class="card__text">
@@ -191,7 +276,7 @@
         </h3>
 
         <div class="row design-project__row">
-          <div class="col">
+          <div class="col-30">
             <div class="card design-project__card">
               <div class="design-project__image"><img src="img/desigh-project/design-1.jpg" alt="Косметический ремонт">
               </div>
@@ -217,7 +302,7 @@
           </div>
 
           <!-- /.col -->
-          <div class="col">
+          <div class="col-30">
             <div class="card design-project__card">
               <div class="design-project__image"><img src="img/desigh-project/design-2.jpg" alt="Капитальный ремонт">
               </div>
@@ -249,7 +334,7 @@
           </div>
           <!-- /.col -->
 
-          <div class="col">
+          <div class="col-30">
             <div class="card design-project__card">
               <div class="design-project__image"> <img src="img/desigh-project/design-3.jpg" alt="Дизайнерский ремонт">
               </div>
@@ -334,8 +419,9 @@
   <!-- /.modal -->
 
 
-
+  <!-- scripts -->
   <script src="js/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
