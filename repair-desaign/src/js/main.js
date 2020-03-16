@@ -90,6 +90,23 @@ $(document).ready(function () {
   goalNext.css('left', goalNext.width() + 20 + goalBullets.width() + 20)
   goalBullets.css('left', goalPrev.width() + 20);
 
+  var mySwiper = new Swiper('.goal__swiper-container', {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: '.image__swiper-pagination',
+      type: 'bullets',
+    },
+    pagination: {
+      el: '.fraction-swiper-pagination',
+      type: 'fraction'
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
 });
 
 // на чистом джава скрипт будет так
