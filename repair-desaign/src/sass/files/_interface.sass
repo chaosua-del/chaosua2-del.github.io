@@ -30,6 +30,13 @@ button
 .section
   &-title
     text-align: center
+    &__subheading
+      font-family: 'Futura Demi'
+      font-weight: 500
+      font-size: 1.07rem
+      line-height: 1.5rem
+      text-transform: uppercase
+      color: $light
     &__heading
       text-transform: uppercase
       font-family: 'Yeseva One', cursiv
@@ -143,3 +150,41 @@ button
 .card
   &__image
     display: block
+
+// swiper
+.swiper
+  &-wrapper
+    margin-bottom: 4.3rem
+  &-slide
+    display: flex
+    flex-wrap: wrap
+    justify-content: start
+    &-next
+      padding-left: 1px
+  &-pagination
+    &-bullet
+      background-color: rgba($light, 0.3) 
+      width: 0.68rem
+      height: 0.68rem
+      margin: 0 0.6rem !important
+      &-active
+        background-color: $light 
+  &-button 
+    &-next, &-prev 
+      width: 42px 
+      height: 14px 
+      top: auto
+      bottom: 0 
+      &::after
+        content: '' 
+        display: none
+    &-next
+      background: url('../img/arrow-next.svg') no-repeat center
+    &-prev
+      left: 0
+      background: url('../img/arrow-prev.svg') no-repeat center
+
+
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: -3px

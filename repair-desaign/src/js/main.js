@@ -44,9 +44,9 @@ $(document).ready(function () {
     }, 1000);
   });
 
-  // swiper
+  // projects__swiper
   //initialize swiper when document ready
-  var mySwiper = new Swiper('.swiper-container', {
+  var mySwiper = new Swiper('.projects__swiper-container', {
     // Optional parameters
     loop: true,
     pagination: {
@@ -57,6 +57,23 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+  });
+
+  // finished__swiper
+  //initialize swiper when document ready
+  var mySwiper = new Swiper('.finished__swiper-container', {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
   });
 
   var next = $('.swiper-button-next');
