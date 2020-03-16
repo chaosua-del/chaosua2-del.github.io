@@ -60,9 +60,16 @@ $(document).ready(function () {
 
   });
 
+  var projectsNext = $('.projects__swiper-button-next');
+  var projectsPrev = $('.projects__swiper-button-prev');
+  var projectsBullets = $('.projects__swiper-pagination');
+
+  projectsNext.css('left', projectsNext.width() + 20 + projectsBullets.width() + 20)
+  projectsBullets.css('left', projectsPrev.width() + 20);
+
   // finished__swiper
   //initialize swiper when document ready
-  var mySwiper = new Swiper('.finished__swiper-container', {
+  var mySwiper = new Swiper('.goal__swiper-container', {
     // Optional parameters
     loop: true,
     pagination: {
@@ -76,12 +83,12 @@ $(document).ready(function () {
 
   });
 
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
+  var goalNext = $('.goal__swiper-button-next');
+  var goalPrev = $('.goal__swiper-button-prev');
+  var goalBullets = $('.goal__swiper-pagination');
 
-  next.css('left', next.width() + 20 + bullets.width() + 20)
-  bullets.css('left', prev.width() + 20);
+  goalNext.css('left', goalNext.width() + 20 + goalBullets.width() + 20)
+  goalBullets.css('left', goalPrev.width() + 20);
 
 });
 
