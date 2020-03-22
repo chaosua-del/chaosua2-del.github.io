@@ -1,37 +1,62 @@
 .footer
+  padding: 2rem 0
+  background: $dark url('../img/footer/footer-bg.jpg') no-repeat center / cover
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%)
   &-wrap
     max-width: 63.07rem
     margin: auto 
     background: $black
     display: flex
+    flex-direction: column
+    align-items: center
     justify-content: center
+    padding: 34px 0
+  &__heading
+    font-family: 'Yeseva One'
+    font-size: 1.428rem
+    text-transform: uppercase
+    margin-bottom: 3.274rem
   &__form
     width: 37.14rem
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    margin-bottom: 3rem
   &__group
     display: inline-block
-    max-width: 16.5rem
+    width: 16.5rem
     margin-bottom: 3.45rem
   &__question-group
     display: block
     flex-basis: 100%
-    margin-bottom: 3.45rem
+    margin-bottom: 3rem
   &__label
     font-size: 1.07rem
     display: block
+    margin-bottom: -0.57rem
   &__input
     min-width: 100%
     font-size: 1.285rem
     border-bottom: 1px solid rgba($light, 0.15)
+    color: $light
+    font-family: 'Futura Book'
     &::placeholder
       color: $light
+      font-family: 'Futura Book'
   &__policy
     flex-basis: 100%
     display: flex
     justify-content: center
     position: relative
+    margin-bottom: 3.428rem
     &-checkbox
       opacity: 0
       visibility: hidden
@@ -50,7 +75,6 @@
       align-items: flex-end
       font-family: 'Futura Book'
       font-size: 1.142rem
-      margin-bottom: 40px
       &::before
         content: ''
         margin-top: 6px
@@ -64,5 +88,23 @@
     display: flex
     justify-content: center
   &__button
-    padding: 1.428rem 3.857rem
+    font-size: 1.07rem
+    font-family: 'Futura Demi'
+    padding: 1.428rem 4.4rem
+    border-radius: 0
   
+  &__contacts
+    font-family: 'Yeseva One'
+    font-size: 1.428rem
+    color: $primary
+    text-align: center
+    text-transform: uppercase
+    line-height: 0.5rem
+    &-phone
+      font-size: 1.428rem
+      text-decoration: 
+      color: $primary
+    &-icons
+      margin-top: 2.35rem
+    &-icon
+      margin: 0 0.3rem
