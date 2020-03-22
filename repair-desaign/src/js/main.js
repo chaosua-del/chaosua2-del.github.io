@@ -50,7 +50,7 @@ $(document).ready(function () {
     // Optional parameters
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.projects__swiper-pagination',
       type: 'bullets',
     },
     navigation: {
@@ -67,47 +67,37 @@ $(document).ready(function () {
   projectsNext.css('left', projectsNext.width() + 20 + projectsBullets.width() + 20)
   projectsBullets.css('left', projectsPrev.width() + 20);
 
-  // finished__swiper
-  //initialize swiper when document ready
-  var mySwiper = new Swiper('.goal__swiper-container', {
-    // Optional parameters
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  // initialize wow
+  new WOW().init();
 
-  });
-
-  var goalNext = $('.goal__swiper-button-next');
-  var goalPrev = $('.goal__swiper-button-prev');
-  var goalBullets = $('.goal__swiper-pagination');
-
-  goalNext.css('left', goalNext.width() + 20 + goalBullets.width() + 20)
-  goalBullets.css('left', goalPrev.width() + 20);
-
-  var mySwiper = new Swiper('.goal__swiper-container', {
-    // Optional parameters
-    loop: true,
-    pagination: {
-      el: '.image__swiper-pagination',
-      type: 'bullets',
-    },
-    pagination: {
-      el: '.fraction-swiper-pagination',
-      type: 'fraction'
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-  });
 });
+
+
+
+
+// // goal-col-swiper
+// var mySwiper3 = new Swiper('.image-col__swiper-container', {
+//   // Optional parameters
+//   loop: true,
+//   pagination: {
+//     el: '.goal__swiper-pagination',
+//     type: 'bullets',
+//   },
+//   pagination: {
+//     el: '.image-col__swiper-pagination',
+//     type: 'bullets',
+//   },
+//   pagination: {
+//     el: '.fraction-swiper-pagination',
+//     type: 'fraction'
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+// });
+
 
 // на чистом джава скрипт будет так
 // document.addEventListener("DomContentLoaded", function () {

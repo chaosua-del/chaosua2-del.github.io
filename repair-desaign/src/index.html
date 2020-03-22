@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
 
   <!-- styles -->
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -19,8 +20,8 @@
   <header class="header">
     <div class="container">
       <div class="menu">
-        <a class="logo menu__logo" href="index.html">Repair Design Project</a>
-        <nav class="nav menu__nav">
+        <a class="logo menu__logo animated animated fadeInLeft" href="index.html">Repair Design Project</a>
+        <nav class="nav menu__nav animated animated fadeInUp">
           <a href="#" class="nav__item">Главная</a>
           <a href="#" class="nav__item">Проекты</a>
           <a href="#" class="nav__item">Замер</a>
@@ -28,7 +29,7 @@
           <a href="#" class="nav__item">Отзывы</a>
           <a href="#" class="nav__item">Контакты</a>
         </nav>
-        <div class="contacts menu__contacts">
+        <div class="contacts menu__contacts animated fadeInRight">
           <a class="phone contacts__phone" href="tel:+79997683299">+7 (999) 768-32-99</a>
           <button class="button contacts__button button--primary">Заказать звонок</button>
         </div>
@@ -64,7 +65,8 @@
         <div class="row projects__row">
           <div class="projects__info-col">
             <div class="section-title section-title--left">
-              <h2 class="section-title__heading section-title__heading--primary section-title__heading--letterspaced">
+              <h2
+                class="section-title__heading section-title__heading--primary section-title__heading--letterspaced wow fadeInLeft">
                 Завершенные <span class="section-title__word">проекты</span></h2>
               <!-- /.section-title__heading -->
               <p class="section-title__text">
@@ -80,6 +82,7 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
                 <!-- Slides -->
+
                 <div class="swiper-slide">
                   <div class="projects__text">
                     <h2 class="projects__heading">Город:</h2>
@@ -87,25 +90,23 @@
                     <span class="projects__value">ЖК Адмирал</span>
                   </div>
                   <!-- /.swiper-slide__text -->
-
                   <div class="projects__text">
                     <h2 class="projects__heading">Площадь:</h2>
                     <span class="projects__value">81 м2</span>
                   </div>
                   <!-- /.swiper-slide__text -->
-
                   <div class="projects__text">
                     <h2 class="projects__heading">Срок ремонта:</h2>
                     <span class="projects__value">3,5 месяца</span>
                   </div>
                   <!-- /.swiper-slide__text -->
-
                   <div class="projects__text">
                     <h2 class="projects__heading">Стоимость:</h2>
                     <span class="projects__value">По запросу</span>
                   </div>
                   <!-- /.swiper-slide__text -->
                 </div>
+
                 <div class="swiper-slide">
                   <div class="projects__text">
                     <h2 class="projects__heading">Город:</h2>
@@ -113,25 +114,23 @@
                     <span class="projects__value">ЖК Адмирал</span>
                   </div>
                   <!-- /.swiper-slide__text -->
-
                   <div class="projects__text">
                     <h2 class="projects__heading">Площадь:</h2>
                     <span class="projects__value">81 м2</span>
                   </div>
                   <!-- /.swiper-slide__text -->
-
                   <div class="projects__text">
                     <h2 class="projects__heading">Срок ремонта:</h2>
                     <span class="projects__value">3,5 месяца</span>
                   </div>
                   <!-- /.swiper-slide__text -->
-
                   <div class="projects__text">
                     <h2 class="projects__heading">Стоимость:</h2>
                     <span class="projects__value">По запросу</span>
                   </div>
                   <!-- /.swiper-slide__text -->
                 </div>
+
                 <div class="swiper-slide">
                   <div class="projects__text">
                     <h2 class="projects__heading">Город:</h2>
@@ -139,25 +138,24 @@
                     <span class="projects__value">ЖК Адмирал</span>
                   </div>
                   <!-- /.swiper-slide__text -->
-
                   <div class="projects__text">
                     <h2 class="projects__heading">Площадь:</h2>
                     <span class="projects__value">81 м2</span>
                   </div>
                   <!-- /.swiper-slide__text -->
-
-                  <div class=projectse__text">
+                  <div class="projects__text">
                     <h2 class="projects__heading">Срок ремонта:</h2>
                     <span class="projects__value">3,5 месяца</span>
                   </div>
                   <!-- /.swiper-slide__text -->
-
                   <div class="projects__text">
                     <h2 class="projects__heading">Стоимость:</h2>
                     <span class="projects__value">По запросу</span>
                   </div>
                   <!-- /.swiper-slide__text -->
                 </div>
+
+
               </div>
               <!-- ./swiper-wrapper -->
 
@@ -196,11 +194,67 @@
     </section>
     <!-- /.section section--dark projects -->
 
+    <section class="section control">
+      <div class="container">
+
+        <div class="section-title control__section-title">
+          <h2 class="section-title__heading section-title__heading--light wow fadeInUp">Онлайн Контроль</h2>
+          <!-- /.section-title__heading -->
+          <div class="section-title__image">
+            <img src="img/video-cam.svg" alt="control">
+          </div>
+          <!-- /.section-title__image -->
+        </div>
+        <!-- /.section-title -->
+
+        <div class="video control__video">
+          <img src="img/play-icon.svg" alt="play" class="video__play wow">
+        </div>
+        <!-- /.video control__video -->
+
+        <p class="control__text">
+          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете
+          зайти на наш
+          сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов!
+          Оставьте
+          заявку ниже чтобы получить ссылку на трансляцию.
+        </p>
+        <!-- /.control__text -->
+
+        <form action="#" class="form control__form">
+
+          <div class="control__input-group">
+            <label for="user-name" class="label form__label control__label label--dark">Имя</label>
+            <input type="text" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+          </div>
+
+          <div class="control__input-group">
+            <label for="user-phone" class="label form__label control__label label--dark">Телефон</label>
+            <input type="tel" class="input form__input control__input" id="user-phone"
+              placeholder="Ваш номер телефона:">
+          </div>
+
+          <button type="submit" class="button button--primary control__button">Отправить</button>
+
+          <div class="policy control__policy">
+            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+            <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой
+              данных</label>
+          </div>
+
+        </form>
+        <!-- /.form modal__form -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section control -->
+
     <section class="types">
       <div class="container">
 
         <div class="section-title types__section-title">
-          <h2 class="section-title__heading">Виды Ремонта</h2>
+          <h2 class="section-title__heading wow fadeInUp">Виды Ремонта</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image">
             <img src="img/types/repair.svg" alt="rapair">
@@ -211,7 +265,7 @@
 
         <div class="row types__row">
           <div class="col-30">
-            <div class="card types__card">
+            <div class="card types__card wow">
               <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Косметический ремонт</h3>
@@ -242,7 +296,7 @@
 
           <!-- /.col -->
           <div class="col-30">
-            <div class="card types__card">
+            <div class="card types__card wow">
               <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Капитальный ремонт</h3>
@@ -273,7 +327,7 @@
           <!-- /.col -->
 
           <div class="col-30">
-            <div class="card types__card">
+            <div class="card types__card wow">
               <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
               <div class="card__text">
                 <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -313,7 +367,7 @@
       <div class="container">
 
         <div class="section-title design-project__section-title">
-          <h2 class="section-title__heading">Дизайн Проект</h2>
+          <h2 class="section-title__heading wow fadeInUp">Дизайн Проект</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image">
             <img src="img/project.svg" alt="project">
@@ -330,7 +384,7 @@
 
         <div class="row design-project__row">
           <div class="col-30">
-            <div class="card design-project__card">
+            <div class="card design-project__card wow">
               <div class="design-project__image"><img src="img/desigh-project/design-1.jpg" alt="Косметический ремонт">
               </div>
               <div class="card__text">
@@ -356,7 +410,7 @@
 
           <!-- /.col -->
           <div class="col-30">
-            <div class="card design-project__card">
+            <div class="card design-project__card wow">
               <div class="design-project__image"><img src="img/desigh-project/design-2.jpg" alt="Капитальный ремонт">
               </div>
               <div class="card__text">
@@ -388,7 +442,7 @@
           <!-- /.col -->
 
           <div class="col-30">
-            <div class="card design-project__card">
+            <div class="card design-project__card wow">
               <div class="design-project__image"> <img src="img/desigh-project/design-3.jpg" alt="Дизайнерский ремонт">
               </div>
               <div class="card__text">
@@ -439,6 +493,7 @@
       <div class="container">
         <div class="goal__row">
           <div class="goal__col">
+
             <span class="section-title__subheading">как мы работаем</span>
             <div class="section-title goal__section-title">
               <h2 class="section-title__heading section-title__heading--primary section-title--left">
@@ -448,8 +503,11 @@
             <!-- ./section-title  -->
 
             <div class="swiper-container goal__swiper-container">
-              <div class="fraction-swiper-pagination goal__status"></div>
+
+              <div class="goal__fraction-swiper-pagination goal__status"></div>
+
               <div class="swiper-wrapper swiper-no-swiping">
+
                 <div class="swiper-slide goal__swiper-slide">
                   <h3 class="goal__heading">Выезд на замеры <span class="word--br">помещения</span></h3>
                   <p class="goal__text goal__text--first">После вашего звонка мы идем к вам, чтобы проконсультироваться
@@ -536,15 +594,34 @@
 
               </div>
               <!-- /.swiper-wrapper -->
+
               <!-- If we need navigation buttons -->
               <div class="swiper-button-prev goal__swiper-button-prev"></div>
               <!-- If we need pagination -->
               <div class="swiper-pagination goal__swiper-pagination"></div>
               <div class="swiper-button-next goal__swiper-button-next"></div>
+
             </div>
             <!-- ./swiper-container -->
           </div>
           <!-- ./goal__col -->
+
+          <div class="image-col goal__image-col">
+            <div class="swiper-container image-col__swiper-container">
+              <div class="swiper-pagination image-col__swiper-pagination"></div>
+              <div class="swiper-wrapper image-col__swiper-wrapper swiper-no-swiping">
+                <div class="swiper-slide">1</div>
+                <div class="swiper-slide">2</div>
+                <div class="swiper-slide">3</div>
+                <div class="swiper-slide">4</div>
+                <div class="swiper-slide">5</div>
+                <div class="swiper-slide">6</div>
+              </div>
+              <!-- /.swiper-wrapper swiper-no-sliding -->
+            </div>
+            <!-- /.image-col__swiper-container -->
+          </div>
+          <!-- /.image-col goal__image-col -->
 
         </div>
         <!-- /.row -->
@@ -556,7 +633,7 @@
     <!-- scroll-up button -->
     <a id="toTop"></a>
 
-    </a>
+
   </main>
 
   <!-- modal -->
@@ -580,6 +657,7 @@
             <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
           </div>
 
+
           <button type="submit" class="button button--primary modal__button">Отправить заявку</button>
         </form>
         <!-- /.form modal__form -->
@@ -593,6 +671,7 @@
   <!-- scripts -->
   <script src="js/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

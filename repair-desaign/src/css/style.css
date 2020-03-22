@@ -499,6 +499,10 @@ button {
   font-size: 1.928rem;
 }
 
+.section-title__heading--light {
+  color: #ffffff;
+}
+
 .section-title__heading--letterspaced {
   letter-spacing: -0.14rem;
 }
@@ -941,12 +945,164 @@ button {
   color: #E3B873;
 }
 
+.control__section-title {
+  margin-bottom: 2.23rem;
+  margin-top: -30rem;
+}
+
+.control__video {
+  position: relative;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/control/video-mask.jpg") center no-repeat;
+  -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.control__video::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.control__text {
+  font-family: 'Futura Book';
+  font-size: 1.428rem;
+  text-align: center;
+  line-height: 2.428rem;
+  max-width: 40.78rem;
+  margin: auto;
+  margin-top: 7.142rem;
+  margin-bottom: 4.357rem;
+}
+
+.control__text::before {
+  content: '';
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.control__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 55rem;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.control__policy {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.75rem;
+  font-size: 16px;
+  font-family: 'Futura Book';
+}
+
+.control__policy-label {
+  margin-left: -5rem;
+}
+
+.control__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.control__label {
+  color: rgba(54, 54, 54, 0.5);
+  font-size: 1.07rem;
+  -webkit-transform: rotate(-0.07deg);
+          transform: rotate(-0.07deg);
+}
+
+.control__input {
+  font-size: 1.285rem;
+  color: #131313;
+  max-width: 16.5rem;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  padding: 0.3rem 0;
+}
+
+.control__input::-webkit-input-placeholder {
+  font-size: 1.285rem;
+  color: #131313;
+  font-family: 'Futura Book';
+}
+
+.control__input:-ms-input-placeholder {
+  font-size: 1.285rem;
+  color: #131313;
+  font-family: 'Futura Book';
+}
+
+.control__input::-ms-input-placeholder {
+  font-size: 1.285rem;
+  color: #131313;
+  font-family: 'Futura Book';
+}
+
+.control__input::placeholder {
+  font-size: 1.285rem;
+  color: #131313;
+  font-family: 'Futura Book';
+}
+
+.control__button {
+  padding: 1.428rem 4.285rem;
+  font-family: 'Futura Demi';
+  font-size: 1.07rem;
+}
+
+.video__play {
+  position: relative;
+  margin: auto;
+}
+
+.video__play:hover {
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 .types__section-title {
   margin-bottom: 1rem;
 }
 
 .types__row {
   margin-top: 2rem;
+}
+
+.card {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
 }
 
 .card__text {
@@ -958,6 +1114,13 @@ button {
   margin: 0 auto;
   margin-top: -9.4rem;
   padding: 1.79rem 2.14rem;
+}
+
+.card__text:hover {
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .card__title {
@@ -1144,6 +1307,10 @@ button {
   color: #ffffff;
 }
 
+.projects {
+  padding-bottom: 30rem;
+}
+
 .projects__info-col {
   width: 35%;
 }
@@ -1246,6 +1413,19 @@ button {
 .goal__text--second {
   max-width: 320px;
   margin-bottom: 2.4rem;
+}
+
+.goal__image-col {
+  width: 60%;
+}
+
+.image-col__swiper-pagination {
+  top: 0;
+  left: 0;
+}
+
+.image-col__swiper-wrapper {
+  margin-top: 5rem;
 }
 
 @media screen and (max-width: 1350px) {
