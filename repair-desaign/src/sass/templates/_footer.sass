@@ -1,0 +1,68 @@
+.footer
+  &-wrap
+    max-width: 63.07rem
+    margin: auto 
+    background: $black
+    display: flex
+    justify-content: center
+  &__form
+    width: 37.14rem
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__group
+    display: inline-block
+    max-width: 16.5rem
+    margin-bottom: 3.45rem
+  &__question-group
+    display: block
+    flex-basis: 100%
+    margin-bottom: 3.45rem
+  &__label
+    font-size: 1.07rem
+    display: block
+  &__input
+    min-width: 100%
+    font-size: 1.285rem
+    border-bottom: 1px solid rgba($light, 0.15)
+    &::placeholder
+      color: $light
+  &__policy
+    flex-basis: 100%
+    display: flex
+    justify-content: center
+    position: relative
+    &-checkbox
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      width: 1.285rem
+      height: 1.285rem
+      margin-top: 7px
+      margin-right: 9px
+      &:checked +
+        .footer__policy-label
+          &::before
+            content: ''
+            background: $primary url('../img/checked.svg') no-repeat center  
+    &-label
+      display: flex
+      align-items: flex-end
+      font-family: 'Futura Book'
+      font-size: 1.142rem
+      margin-bottom: 40px
+      &::before
+        content: ''
+        margin-top: 6px
+        width: 1.285rem
+        height: 1.285rem
+        border: 1px solid $primary   
+        border-radius: 1px   
+        margin-right: 9px
+  &__button-wrap
+    flex-basis: 100%
+    display: flex
+    justify-content: center
+  &__button
+    padding: 1.428rem 3.857rem
+  

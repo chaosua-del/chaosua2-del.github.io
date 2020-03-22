@@ -48,8 +48,34 @@
     margin-top: 1.75rem
     font-size: 16px
     font-family: 'Futura Book'
+    position: relative
+    &-checkbox
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      width: 1.285rem
+      height: 1.285rem
+      margin-top: 7px
+      margin-right: 9px
+      &:checked +
+        .control__policy-label
+          &::before
+            content: ''
+            background: $primary url('../img/checked.svg') no-repeat center  
     &-label
-      margin-left: -5rem
+      display: flex
+      align-items: flex-end
+      font-family: 'Futura Book'
+      font-size: 1.142rem
+      margin-bottom: 40px
+      &::before
+        content: ''
+        margin-top: 6px
+        width: 1.285rem
+        height: 1.285rem
+        border: 1px solid $primary   
+        border-radius: 1px   
+        margin-right: 9px
   &__input-group
     display: flex
     flex-direction: column

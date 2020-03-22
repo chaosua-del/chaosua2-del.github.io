@@ -48,7 +48,35 @@
     align-self: flex-end
     padding: 18px 47px
     border-radius: 0
-    
+  &__policy
+    position: relative
+    &-checkbox
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      width: 1.285rem
+      height: 1.285rem
+      margin-top: 7px
+      margin-right: 9px
+      &:checked +
+        .modal__policy-label
+          &::before
+            content: ''
+            background: $primary url('../img/checked.svg') no-repeat center  
+    &-label
+      display: flex
+      align-items: flex-end
+      font-family: 'Futura Book'
+      font-size: 1.142rem
+      margin-bottom: 40px
+      &::before
+        content: ''
+        margin-top: 6px
+        width: 1.285rem
+        height: 1.285rem
+        border: 1px solid $primary   
+        border-radius: 1px   
+        margin-right: 9px
   
   .form
     &__label
