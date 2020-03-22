@@ -26,11 +26,13 @@
 
     // projects
   .projects
+    &__info-col
+      width: 49%
     &__image-col
       align-self: center
-  .swiper-slide
+      width: 50%
     &__text
-      flex-basis: 45%
+      flex-basis: 50%
   
   
 
@@ -69,11 +71,13 @@
   // projects
   .projects
     &__info-col
-      width: 100%
+      align-self: flex-start
+      width: 75%
     &__image-col
       margin-top: 2.57rem
-      width: 80%
+      width: 100%
       align-self: flex-start
+      
 @media screen and ( max-height: 590px )
   // hero
   .hero
@@ -112,7 +116,10 @@
       min-width: 22.86rem
       margin-bottom: 1.85rem
 
-   
+  //  projects
+  .projects
+    &__info-col
+      width: 100%
 
 @media screen and ( max-width: 450px )
   .hero

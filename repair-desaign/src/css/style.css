@@ -1451,14 +1451,18 @@ button {
     margin-top: -0.5rem;
     min-width: 100%;
   }
+  .projects__info-col {
+    width: 49%;
+  }
   .projects__image-col {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    width: 50%;
   }
-  .swiper-slide__text {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
+  .projects__text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
@@ -1494,11 +1498,13 @@ button {
     margin-left: 0;
   }
   .projects__info-col {
-    width: 100%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 75%;
   }
   .projects__image-col {
     margin-top: 2.57rem;
-    width: 80%;
+    width: 100%;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -1551,6 +1557,9 @@ button {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem;
+  }
+  .projects__info-col {
+    width: 100%;
   }
 }
 
