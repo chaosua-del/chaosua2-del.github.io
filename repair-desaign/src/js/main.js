@@ -1,7 +1,8 @@
 $(document).ready(function () {
   // script for modal window
   var modal = $('.modal'),
-    modalBtn = $('.button'),
+    modalBtn = $('.contacts__button'),
+    heroBtn = $('.hero__button'),
     closeBtn = $('.modal__close');
   var dialog = $(".modal__dialog");
 
@@ -9,6 +10,10 @@ $(document).ready(function () {
 
   // on click we toggle class for modal 
   modalBtn.on('click', function () {
+    modal.show();
+  });
+
+  heroBtn.on('click', function () {
     modal.show();
   });
 
@@ -69,6 +74,105 @@ $(document).ready(function () {
 
   // initialize wow
   new WOW().init();
+
+
+  // form validation
+  $('.modal__form').validate({
+    errorClass: "modal__validation-error",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя должно быть больше 2 букв",
+        maxlength: "Имя не должно быть больше 15 букв"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно введите email",
+        email: "Некорретно введен email"
+      }
+    }
+  });
+
+  $('.control__form').validate({
+    errorClass: "control__validation-error",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя должно быть больше 2 букв",
+        maxlength: "Имя не должно быть больше 15 букв"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно введите email",
+        email: "Некорретно введен email"
+      }
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "footer__validation-error",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userQuestion: {
+        required: true,
+        maxlength: 50
+      },
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя должно быть больше 2 букв",
+        maxlength: "Имя не должно быть больше 15 букв"
+      },
+      userQuestion: {
+        required: "Задайте вопрос",
+        maxlength: "Вопрос должен состоять из не менее  50 символов"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно введите email",
+        email: "Некорретно введен email"
+      }
+    }
+  });
+
+  // маски для инпутов
+  $('[type=tel]').mask("+7(000) 00-00-000", {
+    placeholder: "+7 (___) __-__-___"
+  });
 
 });
 

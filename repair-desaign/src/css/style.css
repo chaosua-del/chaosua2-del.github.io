@@ -1096,6 +1096,15 @@ button {
   font-size: 1.07rem;
 }
 
+.control__validation-error {
+  color: tomato;
+  font-size: 1.07rem;
+}
+
+input.control__validation-error {
+  border-bottom: 1px solid tomato;
+}
+
 .types__section-title {
   margin-bottom: 1rem;
 }
@@ -1311,45 +1320,64 @@ button {
   margin-right: 9px;
 }
 
-.modal .form__label {
+.modal__label {
   font-size: 1.07rem;
   margin-bottom: 0rem;
 }
 
-.modal .form__input {
+.modal__input {
   border-color: rgba(255, 255, 255, 0.15);
-  margin-bottom: 3.3rem;
   font-family: 'Futura Medium';
   font-size: 1.285rem;
   color: #ffffff;
 }
 
-.modal .form__input:last-of-type {
+.modal__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3.3rem;
+}
+
+.modal__input:last-of-type {
   margin-bottom: 0.75rem;
 }
 
-.modal .form__input::-webkit-input-placeholder {
+.modal__input::-webkit-input-placeholder {
   font-family: 'Futura Medium';
   font-size: 1.285rem;
   color: #ffffff;
 }
 
-.modal .form__input:-ms-input-placeholder {
+.modal__input:-ms-input-placeholder {
   font-family: 'Futura Medium';
   font-size: 1.285rem;
   color: #ffffff;
 }
 
-.modal .form__input::-ms-input-placeholder {
+.modal__input::-ms-input-placeholder {
   font-family: 'Futura Medium';
   font-size: 1.285rem;
   color: #ffffff;
 }
 
-.modal .form__input::placeholder {
+.modal__input::placeholder {
   font-family: 'Futura Medium';
   font-size: 1.285rem;
   color: #ffffff;
+}
+
+.modal__validation-error {
+  color: tomato;
+  font-size: 1.07rem;
+}
+
+input.modal__validation-error {
+  border-bottom: 1px solid tomato;
 }
 
 .projects {
@@ -1664,6 +1692,15 @@ button {
   bottom: 0;
   left: 0;
   padding: 4.285rem 0;
+}
+
+.footer__validation-error {
+  color: tomato;
+  font-size: 1.07rem;
+}
+
+input.footer__validation-error {
+  border-bottom: 1px solid tomato;
 }
 
 @media screen and (max-width: 1350px) {

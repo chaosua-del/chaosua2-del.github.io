@@ -77,20 +77,27 @@
         border: 1px solid $primary   
         border-radius: 1px   
         margin-right: 9px
-  
-  .form
-    &__label
-      font-size: 1.07rem
-      margin-bottom: 0rem
-    &__input
-      border-color: rgba(255, 255, 255, 0.15)
+  &__label
+    font-size: 1.07rem
+    margin-bottom: 0rem
+  &__input
+    border-color: rgba(255, 255, 255, 0.15)
+    font-family: 'Futura Medium'
+    font-size: 1.285rem
+    color: $light
+    &-group
+      display: flex
+      flex-direction: column
       margin-bottom: 3.3rem
+    &:last-of-type
+      margin-bottom: 0.75rem
+    &::placeholder
       font-family: 'Futura Medium'
       font-size: 1.285rem
       color: $light
-      &:last-of-type
-        margin-bottom: 0.75rem
-      &::placeholder
-        font-family: 'Futura Medium'
-        font-size: 1.285rem
-        color: $light
+  &__validation-error
+    color: tomato
+    font-size: 1.07rem
+
+input.modal__validation-error
+  border-bottom: 1px solid tomato
