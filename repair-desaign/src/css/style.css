@@ -1767,6 +1767,9 @@ button {
   .control__video {
     max-width: 100%;
   }
+  .control__video-play {
+    max-width: 23%;
+  }
   .control__label {
     color: rgba(255, 255, 255, 0.5);
   }
@@ -1788,8 +1791,16 @@ button {
     color: #ffffff;
   }
   .control__policy {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .control__button {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .footer__group {
     width: 100%;
@@ -1847,14 +1858,56 @@ button {
   .projects__info-col {
     width: 100%;
   }
+  .control {
+    padding-bottom: 0;
+  }
+  .control__button {
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: -2rem;
+  }
+  .control__policy {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
   .footer {
     background: #181818;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .footer__wrap {
-    min-width: 100%;
+  .footer__form {
+    width: 100%;
+  }
+  .footer-wrap {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__group {
-    min-width: 100%;
+    width: 100%;
+  }
+  .footer__contacts {
+    line-height: 1rem;
+  }
+  .footer__contacts-place {
+    line-height: 2rem;
+  }
+  .footer__contacts-phoneText {
+    line-height: 2rem;
+  }
+  .footer__contacts-phone {
+    display: block;
   }
 }
 
