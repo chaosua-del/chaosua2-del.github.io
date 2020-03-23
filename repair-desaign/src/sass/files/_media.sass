@@ -77,6 +77,38 @@
       margin-top: 2.57rem
       width: 100%
       align-self: flex-start
+
+  // control
+  .control
+    background: $dark
+    color: $light
+    &__form
+      display: flex
+      flex-direction: column
+    &__input-group
+      flex-basis: 100%
+      margin-bottom: 2rem
+    &__video
+      max-width: 100%
+    &__label
+      color: rgba($light, 0.5)
+    &__input
+      min-width: 100%
+      color: $light
+      border-bottom-color: $light
+      &::placeholder
+        color: $light
+    &__policy
+      align-self: flex-start
+
+      
+  // footer
+  .footer
+    &__group
+      width: 100%
+      
+
+
       
 @media screen and ( max-height: 590px )
   // hero
@@ -121,7 +153,18 @@
     &__info-col
       width: 100%
 
+  // footer
+  .footer
+    background: $black
+    &__wrap
+      min-width: 100%
+    &__group
+      min-width: 100%
+
 @media screen and ( max-width: 450px )
+
+  
+    
   .hero
     &__content
       min-width: 100%
