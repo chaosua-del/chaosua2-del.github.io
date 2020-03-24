@@ -48,6 +48,8 @@
   &__policy
     flex-basis: 100%
     display: flex
+    flex-direction: column
+    align-items: center
     justify-content: center
     position: relative
     margin-bottom: 3.428rem
@@ -59,7 +61,7 @@
       height: 1.285rem
       margin-top: 7px
       margin-right: 9px
-      &:checked +
+      &:checked ~
         .footer__policy-label
           &::before
             content: ''
@@ -69,6 +71,7 @@
       align-items: flex-end
       font-family: 'Futura Book'
       font-size: 1.142rem
+      margin-bottom: 1rem
       &::before
         content: ''
         margin-top: 6px
@@ -116,6 +119,10 @@
   &__validation-error
     color: tomato
     font-size: 1.07rem
+    order: 2
+    
+    flex-basis: 90%
 
-input.footer__validation-errorhttps://chaosua-del.github.io/repair-desaign/src/#
+input.footer__validation-error
   border-bottom: 1px solid tomato
+  

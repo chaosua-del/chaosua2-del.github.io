@@ -995,6 +995,13 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1014,7 +1021,7 @@ button {
   margin-right: 9px;
 }
 
-.control__policy-checkbox:checked + .control__policy-label::before {
+.control__policy-checkbox:checked ~ .control__policy-label::before {
   content: '';
   background: #E3B873 url("../img/checked.svg") no-repeat center;
 }
@@ -1028,7 +1035,7 @@ button {
           align-items: flex-end;
   font-family: 'Futura Book';
   font-size: 1.142rem;
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
 }
 
 .control__policy-label::before {
@@ -1097,8 +1104,12 @@ button {
 }
 
 .control__validation-error {
+  font-size: 1.285rem;
   color: tomato;
-  font-size: 1.07rem;
+  font-family: 'Futura Book';
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 input.control__validation-error {
@@ -1277,10 +1288,18 @@ input.control__validation-error {
       align-self: flex-end;
   padding: 18px 47px;
   border-radius: 0;
+  margin-top: 2.78rem;
 }
 
 .modal__policy {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .modal__policy-checkbox {
@@ -1293,7 +1312,7 @@ input.control__validation-error {
   margin-right: 9px;
 }
 
-.modal__policy-checkbox:checked + .modal__policy-label::before {
+.modal__policy-checkbox:checked ~ .modal__policy-label::before {
   content: '';
   background: #E3B873 url("../img/checked.svg") no-repeat center;
 }
@@ -1307,7 +1326,6 @@ input.control__validation-error {
           align-items: flex-end;
   font-family: 'Futura Book';
   font-size: 1.142rem;
-  margin-bottom: 40px;
 }
 
 .modal__policy-label::before {
@@ -1373,7 +1391,13 @@ input.control__validation-error {
 
 .modal__validation-error {
   color: tomato;
-  font-size: 1.07rem;
+  font-size: 1.285rem;
+  font-family: 'Futura Medium';
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
 }
 
 input.modal__validation-error {
@@ -1602,6 +1626,13 @@ input.modal__validation-error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1619,7 +1650,7 @@ input.modal__validation-error {
   margin-right: 9px;
 }
 
-.footer__policy-checkbox:checked + .footer__policy-label::before {
+.footer__policy-checkbox:checked ~ .footer__policy-label::before {
   content: '';
   background: #E3B873 url("../img/checked.svg") no-repeat center;
 }
@@ -1633,6 +1664,7 @@ input.modal__validation-error {
           align-items: flex-end;
   font-family: 'Futura Book';
   font-size: 1.142rem;
+  margin-bottom: 1rem;
 }
 
 .footer__policy-label::before {
@@ -1701,6 +1733,11 @@ input.modal__validation-error {
 .footer__validation-error {
   color: tomato;
   font-size: 1.07rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
 }
 
 input.footer__validation-error {

@@ -89,6 +89,9 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
+      },
+      policyAgreement: {
+        required: true,
       }
     },
     messages: {
@@ -101,6 +104,9 @@ $(document).ready(function () {
       userEmail: {
         required: "Обязательно введите email",
         email: "Некорретно введен email"
+      },
+      policyAgreement: {
+        required: "Примите условия соглашения обработки данных"
       }
     }
   });
@@ -117,6 +123,9 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
+      },
+      policyAgreement: {
+        required: true,
       }
     },
     messages: {
@@ -129,6 +138,9 @@ $(document).ready(function () {
       userEmail: {
         required: "Обязательно введите email",
         email: "Некорретно введен email"
+      },
+      policyAgreement: {
+        required: "Примите условия соглашения обработки данных"
       }
     }
   });
@@ -149,6 +161,9 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
+      },
+      policyAgreement: {
+        required: true,
       }
     },
     messages: {
@@ -165,6 +180,9 @@ $(document).ready(function () {
       userEmail: {
         required: "Обязательно введите email",
         email: "Некорретно введен email"
+      },
+      policyAgreement: {
+        required: "Примите условия соглашения обработки данных"
       }
     }
   });
