@@ -1535,7 +1535,6 @@ input.modal__validation-error {
   background: #131313 url("../img/footer/footer-bg.jpg") no-repeat center/cover;
   position: relative;
   padding-bottom: 14rem;
-  margin-top: -1px;
 }
 
 .footer-wrap {
@@ -1820,9 +1819,6 @@ input.footer__validation-error {
   .types__card {
     margin-bottom: 5rem;
   }
-  .design-project__row {
-    margin-bottom: 0;
-  }
   .design-project__card {
     margin-bottom: 5rem;
   }
@@ -1910,7 +1906,7 @@ input.footer__validation-error {
         align-self: center;
   }
   .footer {
-    background: #131313;
+    background: #181818;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1919,7 +1915,6 @@ input.footer__validation-error {
     width: 100%;
   }
   .footer-wrap {
-    background: #131313;
     position: static;
     max-width: 100%;
     display: -webkit-box;
@@ -1929,8 +1924,6 @@ input.footer__validation-error {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 3rem;
-    padding: 0;
   }
   .footer__group {
     width: 100%;

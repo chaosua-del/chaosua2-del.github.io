@@ -55,10 +55,9 @@
 
   
   // design-project
-    .row
-      flex-direction: column
-      align-items: center
   .design-project
+    &__row
+      margin-bottom: 0
     &__card
       margin-bottom: 5rem
     &::after
@@ -115,11 +114,30 @@
       padding-right: 8rem
       align-self: center
 
-
-  // footer
+  //footer
   .footer
+    background: $dark
+    display: flex
+    &__form
+      width: 100%
+    &-wrap
+      background: $dark
+      position: static
+      max-width: 100%
+      display: flex
+      flex-direction: column
+      margin-bottom: 3rem
+      padding: 0
     &__group
       width: 100%
+    &__contacts
+      line-height: 1rem
+      &-place
+        line-height: 2rem
+      &-phoneText
+        line-height: 2rem
+      &-phone
+        display: block  
       
 
 
@@ -178,30 +196,7 @@
     &__policy
       align-self: flex-start
 
-  // footer
-  .footer
-    background: $black
-    display: flex
-    &__form
-      width: 100%
-    &-wrap
-      max-width: 100%
-      display: flex
-      flex-direction: column
-    &__group
-      width: 100%
-    &__contacts
-      line-height: 1rem
-      &-place
-        line-height: 2rem
-      &-phoneText
-        line-height: 2rem
-      &-phone
-        display: block
-        
-      
-      
-
+ 
 @media screen and ( max-width: 450px )
 
   
