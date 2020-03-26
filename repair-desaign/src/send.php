@@ -3,6 +3,7 @@
 $userName = $_POST['userName'];
 $userEmail = $_POST['userEmail'];
 $userPhone = $_POST['userPhone'];
+$userQuestion = $_POST['userQuestion'] || 'Нет';
 
 // Load Composer's autoloader
 require 'phpmailer/Exception.php';
@@ -33,11 +34,18 @@ try {
     $mail->Subject = 'New request';
     $mail->Body    = "Имя пользователя: ${userName},
      Его телефон: ${userPhone},
-      Его почта: ${userEmail}";
+      Его почта: ${userEmail},
+      Вопрос: (если есть) - ${userQuestion}";
 
 
-    $mail->send();
-    echo 'Message has been sent';
+    if($mail->send()) {
+    // echo 'Форма отправлена';
+    echo json_encode(["message" =>  "Форма отправлена"]);
+    }
+    else {
+        echo "Не отправлено, Ошибка: {$mail->ErrorInfo}";
+    }
+   
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

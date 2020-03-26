@@ -5,6 +5,10 @@ $(document).ready(function () {
     heroBtn = $('.hero__button'),
     closeBtn = $('.modal__close');
   var dialog = $(".modal__dialog");
+  var success = $(".success");
+  var successClose = $(".success__close");
+  var successDialog = $(".success__dialog");
+
 
 
 
@@ -108,6 +112,35 @@ $(document).ready(function () {
       policyAgreement: {
         required: "Примите условия соглашения обработки данных"
       }
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log("AJAX сработал. Ответ сервера: Форма отправлена");
+          $(form)[0].reset();
+          modal.hide();
+          success.show();
+          // alert("Форма отправлена, мы свяжемся с вами в течении 10 минут.");
+        },
+        error: function (response) {
+          console.error("Ошибка" + response);
+        }
+      });
+    }
+  });
+
+  // on click we toggle class for success
+  successClose.on('click', function () {
+    success.hide();
+  });
+
+  // if we click out of dialog window we close success
+  $(document).mouseup(function (e) {
+    if (!successDialog.is(e.target) && successDialog.has(e.target).length === 0) {
+      success.hide();
     }
   });
 
@@ -142,6 +175,22 @@ $(document).ready(function () {
       policyAgreement: {
         required: "Примите условия соглашения обработки данных"
       }
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log("AJAX сработал. Ответ сервера: Форма отправлена");
+          $(form)[0].reset();
+          success.show();
+          // alert("Форма отправлена, мы свяжемся с вами в течении 10 минут.");
+        },
+        error: function (response) {
+          console.error("Ошибка" + response);
+        }
+      });
     }
   });
 
@@ -184,6 +233,22 @@ $(document).ready(function () {
       policyAgreement: {
         required: "Примите условия соглашения обработки данных"
       }
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log("AJAX сработал. Ответ сервера: Форма отправлена");
+          $(form)[0].reset();
+          success.show();
+          // alert("Форма отправлена, мы свяжемся с вами в течении 10 минут.");
+        },
+        error: function (response) {
+          console.error("Ошибка" + response);
+        }
+      });
     }
   });
 
