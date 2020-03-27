@@ -79,3 +79,4 @@ function imagemin(done) {
 }
 
 exports.build = series(buildCSS, buildJS, html, php, fonts, imagemin);
+exports.html = html;

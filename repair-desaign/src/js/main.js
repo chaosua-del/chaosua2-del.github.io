@@ -218,7 +218,7 @@ $(document).ready(function () {
     messages: {
       userName: {
         required: "Имя обязательно",
-        minlength: "Имя должно быть больше 2 букв",
+        minlength: "Слишком короткое имя",
         maxlength: "Имя не должно быть больше 15 букв"
       },
       userQuestion: {
@@ -256,6 +256,40 @@ $(document).ready(function () {
   $('[type=tel]').mask("+7(000) 00-00-000", {
     placeholder: "+7 (___) __-__-___"
   });
+
+  function lazyLoad() {
+    $('iframe').each(function () {
+      var frame = $(this),
+        vidSource = $(frame).attr('data-src'),
+        distance = $(frame).offset().top - $(window).scrollTop(),
+        distTopBot = window.innerHeight - distance,
+        distBotTop = distance + $(frame).height();
+
+      if (distTopBot >= 0 && distBotTop >= 0) { // if frame is partly in view
+        $(frame).attr('src', vidSource);
+        $(frame).removeAttr('data-src');
+      }
+    });
+  }
+  // var throttled = _.throttle(lazyLoad, 100);
+  $(window).scroll(lazyLoad);
+
+  // controll__video
+  var player;
+  $('.control__video-play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '465',
+      width: '100%',
+      videoId: 'RHzzLqJWqHs',
+      events: {
+        'onReady': videoPlay
+      }
+    });
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
 
 });
 

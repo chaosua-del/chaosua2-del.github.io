@@ -2,8 +2,12 @@
 <html lang="ru">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Repair-Design</title>
+
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
 
@@ -13,7 +17,25 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Document</title>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
@@ -207,8 +229,8 @@
         </div>
         <!-- /.section-title -->
 
-        <div class="video control__video">
-          <img src="img/control/video-mask.jpg" alt="video-mask" class="control__video-mask">
+        <div class="video control__video" id="player">
+          <script src="https://www.youtube.com/iframe_api"></script>
           <img src="img/play-icon.svg" alt="play" class="control__video-play wow">
         </div>
         <!-- /.video control__video -->
@@ -222,7 +244,8 @@
         </p>
         <!-- /.control__text -->
 
-        <form action="../send.php" method="POST" class="form control__form">
+        <form action="../send.php" method="POST" class="form control__form" type="submit"
+          onsubmit="ym(61404928,'reachGoal','callBack')">
 
           <div class="control__input-group">
             <label for="control__user-name" class="label form__label control__label label--dark">Имя</label>
@@ -502,8 +525,12 @@
   <footer class="footer section section--dark">
     <div class="container footer__container">
       <div class="footer-wrap">
+
         <h3 class="heading footer__heading">Остались вопросы?</h3>
-        <form action="send.php" method="POST" class="form footer__form">
+
+        <form action="send.php" method="POST" class="form footer__form" type="submit"
+          onsubmit="ym(61404928,'reachGoal','giveQuestion')">
+
           <div class="footer__group">
             <label for="user-name" class="label footer__label label--light">Имя</label>
             <input type="text" class="input footer__input" id="user-name" name="userName" placeholder="Как вас зовут:">
@@ -523,7 +550,8 @@
 
 
           <div class="footer__policy">
-            <input type="checkbox" name="policyAgreement" id="footer__policy-checkbox" class="footer__policy-checkbox">
+            <input type="checkbox" name="policyAgreement" id="footer__policy-checkbox" class="footer__policy-checkbox"
+              checked>
             <label for="footer__policy-checkbox" class="footer__policy-label">Я соглашаюсь с обработкой
               данных</label>
           </div>
@@ -595,7 +623,8 @@
 
         <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
 
-        <form action="../send.php" method="POST" class="form modal__form">
+        <form action="../send.php" method="POST" class="form modal__form" type="submit"
+          onsubmit="yaCounter61404928.reachGoal('contactUs')">
           <div class="input-group modal__input-group">
             <label for="modal__user-name" class="label modal__label label--light">Имя</label>
             <input type="text" class="input modal__input" id="modal__user-name" name="userName"
@@ -652,6 +681,30 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(61404928, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/61404928" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 </body>
 
 </html>
