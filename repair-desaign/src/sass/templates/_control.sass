@@ -57,7 +57,7 @@
     flex-direction: column
     align-items: center
     justify-content: center
-    margin-top: 1.75rem
+    margin-top: 3rem
     font-size: 16px
     font-family: 'Futura Book'
     position: relative
@@ -91,6 +91,7 @@
   &__input-group
     display: flex
     flex-direction: column
+    position: relative
   &__label
     color: rgba(54, 54, 54, 0.5)
     font-size: 1.07rem
@@ -102,6 +103,8 @@
     border-bottom: 1px solid rgba(54, 54, 54, 0.3)
     padding: 0.3rem 0
     font-family: 'Futura Book'
+    position: absolute
+    top: 10px !important
     &::placeholder
       font-size: 1.285rem
       color: $dark
@@ -110,7 +113,7 @@
     padding: 1.428rem 4.285rem
     font-family: 'Futura Demi'
     font-size: 1.07rem
-    align-self: center
+    align-self: flex-start
   &__validation-error
     font-size: 1.285rem
     color: tomato
@@ -118,6 +121,9 @@
     order: 2
     display: block
     min-width: 16.5rem
+    position: absolute
+    top: 40px
+   
 
 input.control__validation-error
   border-bottom: 1px solid tomato

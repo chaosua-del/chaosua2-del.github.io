@@ -39,6 +39,7 @@
 </head>
 
 <body>
+
   <header class="header">
     <div class="container">
       <div class="menu">
@@ -244,8 +245,8 @@
         </p>
         <!-- /.control__text -->
 
-        <form action="../send.php" method="POST" class="form control__form" type="submit"
-          onsubmit="ym(61404928,'reachGoal','callBack')">
+        <form action="../send.php" method="POST" class="form control__form"
+          onsubmit="ym(61404928,'reachGoal','callBack'); return true;">
 
           <div class="control__input-group">
             <label for="control__user-name" class="label form__label control__label label--dark">Имя</label>
@@ -528,8 +529,8 @@
 
         <h3 class="heading footer__heading">Остались вопросы?</h3>
 
-        <form action="send.php" method="POST" class="form footer__form" type="submit"
-          onsubmit="ym(61404928,'reachGoal','giveQuestion')">
+        <form action="send.php" method="POST" class="form footer__form"
+          onsubmit="ym(61404928,'reachGoal','giveQuestion'); return true;">
 
           <div class="footer__group">
             <label for="user-name" class="label footer__label label--light">Имя</label>
@@ -623,8 +624,8 @@
 
         <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
 
-        <form action="../send.php" method="POST" class="form modal__form" type="submit"
-          onsubmit="yaCounter61404928.reachGoal('contactUs')">
+        <form action="../send.php" method="POST" class="form modal__form"
+          onsubmit="ym(61404928,'reachGoal','contactUs'); return true;">
           <div class="input-group modal__input-group">
             <label for="modal__user-name" class="label modal__label label--light">Имя</label>
             <input type="text" class="input modal__input" id="modal__user-name" name="userName"
@@ -691,20 +692,17 @@
       m[i].l = 1 * new Date();
       k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
         a)
-    })
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
+    })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
     ym(61404928, "init", {
       clickmap: true,
       trackLinks: true,
       accurateTrackBounce: true,
       webvisor: true
     });
-  </script>
-  <noscript>
+  </script> <noscript>
     <div><img src="https://mc.yandex.ru/watch/61404928" style="position:absolute; left:-9999px;" alt="" /></div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
+  </noscript> <!-- /Yandex.Metrika counter -->
+
 </body>
 
 </html>
