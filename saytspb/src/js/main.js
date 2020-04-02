@@ -16,5 +16,14 @@ $(document).ready(function () {
     },
   });
 
+  var swiper3 = new Swiper('.news__swiper-container', {
+    loop: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
 
 });
