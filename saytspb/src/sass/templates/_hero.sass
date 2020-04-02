@@ -3,14 +3,6 @@
   // height: 100vh
   letter-spacing: -0.24px
   position: relative
-  &::after
-    content: ''
-    top: 303px
-    left: 332px
-    position: absolute
-    width: 38px
-    height: 38px
-    background: transparent url('../img/hero/decorative-tic.png')
   &__container
     position: relative
   &__content
@@ -64,23 +56,6 @@
       padding-top: 61px
       padding-bottom: 23px
      
-.video-info
-  display: flex
-  justify-content: space-between
-  text-align: center
-  padding: 7.857rem 4.285rem
-  margin-top: -125px
-  &__number
-    color: $primary
-    font-size: 4.43rem
-    display: block
-    letter-spacing: -3.34px
-    font-weight: 700
-  &__text
-    color: #383736
-    font-size: 1.57rem
-    font-weight: 700
-        
     
 .main
   display: flex
@@ -97,10 +72,24 @@
     letter-spacing: 1.5px
     line-height: 4.785rem
     margin-top: 3rem
+    position: relative
+    &::after
+      content: ''
+      top: -3.5rem
+      left: -1.57rem
+      position: absolute
+      display: block
+      width: 2.714rem
+      height: 2.714rem
+      background: transparent url('../img/hero/decorative-tic.png') center / cover
+  &__header
+    font-size: 4.428rem
+    line-height: 5rem
+    letter-spacing: -1.5px
   &__text
     color: #2e2e2d
     max-width: 40.2rem
-    font-size: 20px
+    font-size: 1.428rem
     line-height: 2rem
     letter-spacing: -0.5px
     font-weight: 300
@@ -152,6 +141,23 @@
       padding: 0
 
     
+.video-info
+  display: flex
+  justify-content: space-between
+  text-align: center
+  padding: 7.857rem 4.285rem
+  margin-top: -125px
+  &__number
+    color: $primary
+    font-size: 4.43rem
+    display: block
+    letter-spacing: -3.34px
+    font-weight: 700
+  &__text
+    color: #383736
+    font-size: 1.57rem
+    font-weight: 700
+        
   
     
 

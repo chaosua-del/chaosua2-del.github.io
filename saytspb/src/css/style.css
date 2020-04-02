@@ -285,16 +285,6 @@ a {
   position: relative;
 }
 
-.hero::after {
-  content: '';
-  top: 303px;
-  left: 332px;
-  position: absolute;
-  width: 38px;
-  height: 38px;
-  background: transparent url("../img/hero/decorative-tic.png");
-}
-
 .hero__container {
   position: relative;
 }
@@ -371,32 +361,6 @@ a {
   padding-bottom: 23px;
 }
 
-.video-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  padding: 7.857rem 4.285rem;
-  margin-top: -125px;
-}
-
-.video-info__number {
-  color: #ff5a3c;
-  font-size: 4.43rem;
-  display: block;
-  letter-spacing: -3.34px;
-  font-weight: 700;
-}
-
-.video-info__text {
-  color: #383736;
-  font-size: 1.57rem;
-  font-weight: 700;
-}
-
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,12 +380,30 @@ a {
   letter-spacing: 1.5px;
   line-height: 4.785rem;
   margin-top: 3rem;
+  position: relative;
+}
+
+.main__title::after {
+  content: '';
+  top: -3.5rem;
+  left: -1.57rem;
+  position: absolute;
+  display: block;
+  width: 2.714rem;
+  height: 2.714rem;
+  background: transparent url("../img/hero/decorative-tic.png") center/cover;
+}
+
+.main__header {
+  font-size: 4.428rem;
+  line-height: 5rem;
+  letter-spacing: -1.5px;
 }
 
 .main__text {
   color: #2e2e2d;
   max-width: 40.2rem;
-  font-size: 20px;
+  font-size: 1.428rem;
   line-height: 2rem;
   letter-spacing: -0.5px;
   font-weight: 300;
@@ -498,6 +480,32 @@ a {
 .social__header h2 {
   margin: 0;
   padding: 0;
+}
+
+.video-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 7.857rem 4.285rem;
+  margin-top: -125px;
+}
+
+.video-info__number {
+  color: #ff5a3c;
+  font-size: 4.43rem;
+  display: block;
+  letter-spacing: -3.34px;
+  font-weight: 700;
+}
+
+.video-info__text {
+  color: #383736;
+  font-size: 1.57rem;
+  font-weight: 700;
 }
 
 .advantages {
@@ -766,6 +774,9 @@ a {
   html {
     font-size: 12px;
   }
+  .hero__content {
+    margin-top: -10rem;
+  }
   .social__header {
     bottom: 9%;
   }
@@ -788,6 +799,9 @@ a {
   .video-info__block {
     margin-right: 1rem;
   }
+  .social__links {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 772px) {
@@ -801,7 +815,7 @@ a {
     width: 100%;
   }
   .hero__video {
-    margin-top: 22rem;
+    margin-top: 28rem;
   }
   .hero__video-info {
     position: static;
@@ -815,6 +829,30 @@ a {
   .social__header {
     bottom: 10%;
     left: 31%;
+  }
+  .main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__title {
+    margin-top: -9rem;
+  }
+  .main__img {
+    -ms-flex-preferred-size: 51%;
+        flex-basis: 51%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: 8rem;
+  }
+  .main__text {
+    line-height: 3rem;
   }
   .services__content {
     -webkit-box-pack: center;
