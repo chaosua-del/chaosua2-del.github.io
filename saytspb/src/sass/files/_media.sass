@@ -36,6 +36,16 @@
       right: 0
       bottom: -4rem
 
+  // price
+  .price
+    &__container
+      display: flex
+      // align-items: center
+      justify-content: flex-start
+    &__form
+      // flex-basis: 40%
+      flex-basis: 50%
+
 
 @media screen and ( max-width:  1250px)
   html
@@ -48,6 +58,11 @@
   .main
     &__img
       flex-basis: 50%
+  
+  // price
+  .price
+    &__image
+      background: url('../img/price/price-form-bg.png') no-repeat 73% 67%
 
 @media screen and ( max-width:  1100px)
   html
@@ -127,6 +142,15 @@
     &__video-play
       top: 77%
   
+  // price
+  .price
+    &__container
+      flex-wrap: wrap
+      justify-content: center
+    &__form
+      flex-basis: 100%
+    &__image
+      display: none
 
 @media screen and ( min-width:  992px)
   .menu
