@@ -14,11 +14,13 @@ img {
 
 html {
   font-size: 14px;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 2rem;
+  overflow-x: hidden;
 }
 
 h2, h3, h4 {
@@ -99,6 +101,21 @@ a {
 .input-group {
   display: block;
   width: 100%;
+}
+
+.link {
+  color: #ff5a3c;
+  text-decoration: none;
+  border-bottom: 1px solid #ff5a3c;
+  padding-bottom: 2px;
+}
+
+.swiper-slide {
+  margin: 0 auto;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  color: #696b69;
 }
 
 .header__menu {
@@ -648,6 +665,7 @@ a {
 .price {
   background: #1e1e1e url("../img/price/price-bg.jpg") no-repeat center/cover;
   padding: 85px 0;
+  margin-top: 14rem;
 }
 
 .price__container {
@@ -711,6 +729,180 @@ a {
   width: 50%;
   height: 100%;
   background: url("../img/price/price-form-bg.png") no-repeat 73% 0;
+}
+
+.cases {
+  margin-top: 7rem;
+}
+
+.cases__title {
+  margin-bottom: 1.5rem;
+}
+
+.cases__description {
+  max-width: 56.8rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.cases__swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.cases__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 996px;
+  margin: 0 auto;
+  padding: 0rem 4rem;
+  background: url("../img/cases/card-bg.png") no-repeat;
+  -webkit-box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05);
+          box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05);
+}
+
+.cases__card-title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  font-size: 1.57rem;
+  font-weight: 500;
+  color: #2c2c2d;
+  margin-bottom: 1rem;
+}
+
+.cases__card-info {
+  font-size: 1.285rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.cases__card-infoTitle {
+  color: #47a536;
+  font-weight: 700;
+  display: block;
+  margin-bottom: -1rem;
+}
+
+.cases__card-infoDescription {
+  display: block;
+}
+
+.cases__card-infoList {
+  position: relative;
+}
+
+.cases__card-listItem {
+  list-style-type: none;
+  margin-left: -39px;
+}
+
+.cases__card-listItem::before {
+  content: '>';
+  font-size: 2rem;
+  color: #ff5a3c;
+}
+
+.cases__card-graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cases__card-graphTitle {
+  color: #2c2c2d;
+  font-size: 1.285rem;
+  font-weight: 400;
+  max-width: 26.42rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cases__card-graphDescription {
+  color: #707071;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cases__button {
+  margin: 5.5rem auto;
+  display: block;
+  padding: 0.5rem 5rem;
+}
+
+.feedback__container {
+  position: relative;
+}
+
+.feedback__swiper-container {
+  overflow: hidden;
+}
+
+.feedback__description {
+  max-width: 56.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+.feedback__text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 66.5rem;
+  font-size: 1.57rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  color: #0d0d0d;
+}
+
+.feedback__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__user-img {
+  margin-right: 15px;
+}
+
+.feedback__user-name {
+  color: #0d0d0d;
+  font-size: 1.285rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.feedback__user-job {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #848281;
+  display: block;
+}
+
+.feedback__swiper-button-prev, .feedback__swiper-button-next {
+  top: 73%;
 }
 
 @media screen and (max-width: 1740px) {
@@ -792,6 +984,13 @@ a {
 @media screen and (max-width: 1100px) {
   html {
     font-size: 11px;
+  }
+  .cases__card-graph {
+    text-align: center;
+  }
+  .cases__card-graphTitle {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
