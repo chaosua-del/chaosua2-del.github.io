@@ -5,8 +5,13 @@
     flex-basis: 100%
     display: flex
     flex-wrap: wrap
-    // align-items: center
     justify-content: center
+    position: relative
+    &::after
+      content: url('../img/questions/questions-line.png')
+      position: absolute
+      bottom: 1rem
+      right: 47%
   &__info-wrap
     flex-basis: 47%
     display: flex
