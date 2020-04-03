@@ -916,7 +916,6 @@ a {
   background: #e3fbdd;
   margin-top: 4.285rem;
   padding-top: 4.43rem;
-  padding-bottom: 5rem;
 }
 
 .news__swiper-container {
@@ -1142,6 +1141,50 @@ a {
   color: #ff5a3c;
   margin-top: 1.5rem;
   padding: 0.3rem 5rem;
+}
+
+.footer {
+  background: #ebebeb url("../img/footer/footer-bg.png") no-repeat center/cover;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 65px 0 49px 0;
+}
+
+.footer__name {
+  color: #38393b;
+  font-size: 1.857rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.02px;
+  margin-top: 1.01rem;
+  margin-bottom: 3.3rem;
+}
+
+.footer__line {
+  width: 62rem;
+  height: 3px;
+  background: rgba(60, 58, 58, 0.46);
+  margin-bottom: 3.6rem;
+}
+
+.footer__policy {
+  color: #151515;
+  font-size: 1.143rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1740px) {
@@ -1426,6 +1469,9 @@ a {
   }
   .price__image {
     display: none;
+  }
+  .footer__line {
+    width: 80%;
   }
 }
 
