@@ -105,7 +105,51 @@
   //     left: 8rem
 
 @media screen and ( max-width:  992px)
+  // header
+  .nav
+    &__menu
+      float: right
+      display: block
+      padding: 20px 10px
+      cursor: pointer
+      position: relative
+      order: 2
+    &__list
+      position: absolute
+      top: 4%
+      left: 6%
+      width: 100%
+      overflow: hidden
+      height: 0
+      ul
+        list-style: circle
+        display: flex
+        flex-direction: column
+        li
+          margin-bottom: 1rem
+          // width: 100%
+    &__open
+      height: auto
+
   // hero
+  .hero
+    &__content
+      margin-top: 15rem
+    
+  .main
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    &__title
+      margin-top: -71rem
+    &__img
+      flex-basis: 51%
+      order: -1
+      margin-left: 8rem
+      margin-top: -59rem
+    &__text
+      line-height: 3rem
+  
   .video-info
     &__block
       margin-right: 1rem
@@ -172,18 +216,10 @@
       left: 31%
 
   .main
-    flex-wrap: wrap
-    justify-content: center
-    align-items: center
-    &__title
-      margin-top: -9rem
     &__img
-      flex-basis: 51%
-      order: -1
-      margin-left: 8rem
-    &__text
-      line-height: 3rem
-
+      margin-top: -40rem
+    &__title
+      margin-top: -26rem
 
   // services
   .services
@@ -215,24 +251,34 @@
   html
     font-size: 6px
 
+  // header
+  .nav
+    &__list
+      top: 7%
+
   // advantages
   .advantages
     &__content
       &-block
         flex-basis: 40%
 
+  // hero
   .hero
+    &__content
+      margin-top: 1rem
     &__video
       margin-top: 31rem
 
   .social
     margin-top: -57rem
     &__header
-      display: none
+      // display: none
+      left: 10%
 
   .main
     &__title
       margin: 0 auto
+      margin-top: -5rem
     &__text
       line-height: 3rem
     &__img
@@ -256,6 +302,11 @@
   
 
 @media screen and ( max-width:  420px)
+
+  .nav
+    &__phone
+      display: none
+
   .hero
     &__video-play
       top: 77%
@@ -267,18 +318,18 @@
       width: 80%
 
 @media screen and ( min-width:  992px)
-  .menu
-    &__nav
-      clear: none
-      position: static
-      transform: translateY(0)
-      // display: flex
-      // flex-direction: row
-      // // align-items: center
-      display: block
+  // .menu
+  //   &__nav
+  //     clear: none
+  //     position: static
+  //     transform: translateY(0)
+  //     // display: flex
+  //     // flex-direction: row
+  //     // // align-items: center
+  //     display: block
 
-  .burger-menu
-    display: none
+  // .burger-menu
+  //   display: none
 
   
  

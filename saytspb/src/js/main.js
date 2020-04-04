@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+  var success = $(".success");
+  var successClose = $(".success__close");
+  var successDialog = $(".success__block");
+
+  // header menu
+  $('.nav__menu').on('click', function () {
+    $('.nav__list').addClass('nav__open').slideToggle('300');
+  });
+
   var swiper = new Swiper('.cases__swiper-container', {
     loop: true,
     navigation: {
@@ -66,8 +75,8 @@ $(document).ready(function () {
         success: function (response) {
           console.log("AJAX сработал. Ответ сервера: Форма отправлена");
           $(form)[0].reset();
-          modal.hide();
-          success.show();
+          // modal.hide();
+          // success.show();
           // alert("Форма отправлена, мы свяжемся с вами в течении 10 минут.");
         },
         error: function (response) {
@@ -123,7 +132,6 @@ $(document).ready(function () {
         success: function (response) {
           console.log("AJAX сработал. Ответ сервера: Форма отправлена");
           $(form)[0].reset();
-          modal.hide();
           success.show();
           // alert("Форма отправлена, мы свяжемся с вами в течении 10 минут.");
         },
@@ -131,6 +139,18 @@ $(document).ready(function () {
           console.error("Ошибка" + response);
         }
       });
+    }
+  });
+
+  // on click we toggle class for success
+  successClose.on('click', function () {
+    success.hide();
+  });
+
+  // if we click out of dialog window we close success
+  $(document).mouseup(function (e) {
+    if (!successDialog.is(e.target) && successDialog.has(e.target).length === 0) {
+      success.hide();
     }
   });
 
