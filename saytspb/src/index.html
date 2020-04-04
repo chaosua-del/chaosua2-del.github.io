@@ -11,6 +11,7 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -92,7 +93,8 @@
     </div>
     <!-- /.hero__content -->
 
-    <div class="hero__video">
+    <div class="hero__video" id="player">
+
       <div class="container hero__container">
         <div class="video-info hero__video-info">
 
@@ -122,7 +124,10 @@
 
       <img src="img/hero/video-bg.jpg" alt="video-mask" class="hero__video-mask">
 
-      <div class="hero__video-play"></div>
+      <a class="hero__video-play" data-fancybox href="https://www.youtube.com/watch?v=vddBT-xmlZk"></a>
+      <!-- <div class="hero__video-play"></div> -->
+      <!-- <iframe id="ytplayer" type="text/html" width="100%" height="405" src="https://www.youtube.com/embed/M7lc1UVf-VE"
+        frameborder="0" allowfullscreen> -->
 
     </div>
 
@@ -252,28 +257,31 @@
 
   <section class="section price">
     <div class="container price__container">
-      <form action="#" class="form price__form">
+      <form action="send.php" method="POST" class="form price__form">
 
         <h2 class="price__header">Узнать стоимость</h2>
 
         <div class="input-group price__input-group">
           <label for="price-user-name" class="form-label price__form-label">Имя</label>
-          <input type="text" class="form-input price__form-input" id="price-user-name" placeholder="Введите ваше Имя">
+          <input type="text" class="form-input price__form-input" id="price-user-name" name="userName"
+            placeholder="Введите ваше Имя">
         </div>
 
         <div class="input-group price__input-group">
           <label for="price-email" class="form-label price__form-label">E-mail</label>
-          <input type="email" class="form-input price__form-input" id="price-email" placeholder="Введите ваш Email">
+          <input type="email" class="form-input price__form-input" id="price-email" name="userEmail"
+            placeholder="Введите ваш Email">
         </div>
 
         <div class="input-group price__input-group">
           <label for="price-url" class="form-label price__form-label">адреса веб-сайта</label>
-          <input type="url" class="form-input price__form-input" id="price-url" placeholder="Введите url вашего сайта">
+          <input type="url" class="form-input price__form-input" id="price-url" name="userUrl"
+            placeholder="Введите url вашего сайта">
         </div>
 
         <div class="input-group price__input-group">
           <label for="price-message" class="form-label price__form-label">сообщение</label>
-          <input type="text" class="form-input price__form-input" id="price-message"
+          <input type="text" class="form-input price__form-input" id="price-message" name="userQuestion"
             placeholder="Введите Ваше сообщение">
         </div>
 
@@ -595,25 +603,25 @@
 
           <div class="input-group questions__input-group">
             <label for="questions-user-name" class="form-label questions__form-label">Имя</label>
-            <input type="text" class="form-input questions__form-input" id="questions-user-name"
+            <input type="text" class="form-input questions__form-input" id="questions-user-name" name="userName"
               placeholder="Введите ваше Имя">
           </div>
 
           <div class="input-group questions__input-group">
             <label for="questions-email" class="form-label questions__form-label">E-mail</label>
-            <input type="email" class="form-input questions__form-input" id="questions-email"
+            <input type="email" class="form-input questions__form-input" id="questions-email" name="userEmail"
               placeholder="Введите ваш Email">
           </div>
 
           <div class="input-group questions__input-group">
             <label for="questions-phone" class="form-label questions__form-label">телефон</label>
-            <input type="tel" class="form-input questions__form-input" id="questions-phone"
+            <input type="tel" class="form-input questions__form-input" id="questions-phone" name="userPhone"
               placeholder="+7 999 888-88-88">
           </div>
 
           <div class="input-group questions__input-group">
             <label for="questions-message" class="form-label questions__form-label">сообщение</label>
-            <input type="text" class="form-input questions__form-input" id="questions-message"
+            <input type="text" class="form-input questions__form-input" id="questions-message" name="userQuestion"
               placeholder="Введите Ваше сообщение">
           </div>
 
@@ -646,7 +654,10 @@
   <!-- /.footer -->
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

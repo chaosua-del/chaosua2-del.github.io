@@ -73,6 +73,8 @@
       color: #413f3e
       border: none
       border-bottom: 1px solid #939497
+      order: 2
+      flex-basis: 100%
       &::placeholder
         color: #1e1e1e
   &__button
@@ -80,4 +82,15 @@
     color: #ff5a3c
     margin-top: 1.5rem
     padding: 0.3rem 5rem
+  &__input-group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__validation-error
+    color: #ffffff
+      
+
+.price__input-group
+  input.price__validation-error
+    border-bottom-color: #ffffff
 

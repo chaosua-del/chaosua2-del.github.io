@@ -138,7 +138,15 @@
       margin-right: auto
       display: block
     
-
+  // price
+  .price
+    &__container
+      flex-wrap: wrap
+      justify-content: center
+    &__form
+      flex-basis: 100%
+    &__image
+      display: none
 
 @media screen and ( max-width:  772px)
   html
@@ -237,27 +245,21 @@
 
   // news
   .news
+    padding-bottom: 4rem
     &__swiper-button-prev, &__swiper-button-next
       top: 97%
     &__swiper-button-prev
       left: 25%
     &__swiper-button-next
       left: 50%
+  
+  
 
 @media screen and ( max-width:  420px)
   .hero
     &__video-play
       top: 77%
   
-  // price
-  .price
-    &__container
-      flex-wrap: wrap
-      justify-content: center
-    &__form
-      flex-basis: 100%
-    &__image
-      display: none
 
   // footer
   .footer
