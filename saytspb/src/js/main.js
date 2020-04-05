@@ -4,6 +4,9 @@ $(document).ready(function () {
   var successClose = $(".success__close");
   var successDialog = $(".success__block");
 
+  // initialize wow
+  new WOW().init();
+
   // header menu
   $('.nav__menu').on('click', function () {
     $('.nav__list').addClass('nav__open').slideToggle('300');

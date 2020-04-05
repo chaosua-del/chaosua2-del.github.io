@@ -54,6 +54,12 @@ button {
 .button--primary {
   background: #ff5a3c;
   color: #ffffff;
+  -webkit-transition: background 0.1s;
+  transition: background 0.1s;
+}
+
+.button:hover {
+  background: #ef2500;
 }
 
 a {
@@ -218,6 +224,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-transform: uppercase;
 }
 
 .nav__logo::before {
@@ -226,10 +233,10 @@ a {
 }
 
 .nav__list {
-  float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -270,6 +277,7 @@ a {
   color: #38393b;
   font-weight: 500;
   font-size: 1.285rem;
+  margin-left: -1rem;
 }
 
 .nav__menu {
@@ -306,6 +314,10 @@ a {
   margin-top: 19rem;
   width: 100%;
   height: 34rem;
+  position: relative;
+}
+
+.hero__video-wrap {
   position: relative;
 }
 
@@ -358,6 +370,7 @@ a {
   position: absolute;
   padding-top: 61px;
   padding-bottom: 23px;
+  z-index: 99;
 }
 
 .main {
@@ -1153,6 +1166,10 @@ a {
   padding: 0.3rem 5rem;
 }
 
+.questions__button:hover {
+  background: #cccccc;
+}
+
 .questions__input-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1249,6 +1266,12 @@ a {
 }
 
 @media screen and (max-width: 1600px) {
+  .nav__list {
+    margin-left: 0;
+  }
+  .nav__phone {
+    margin-left: 0;
+  }
   .hero__video {
     margin-top: 10rem;
   }
@@ -1330,8 +1353,8 @@ a {
   }
   .nav__list {
     position: absolute;
-    top: 4%;
-    left: 6%;
+    top: 66%;
+    left: 7%;
     width: 100%;
     overflow: hidden;
     height: 0;
@@ -1351,6 +1374,7 @@ a {
   }
   .nav__open {
     height: auto;
+    width: auto;
   }
   .hero__content {
     margin-top: 15rem;
@@ -1455,9 +1479,6 @@ a {
   .hero__video-info {
     position: static;
   }
-  .hero__video-play {
-    top: 74%;
-  }
   .social {
     margin-top: -29rem;
   }
@@ -1470,6 +1491,9 @@ a {
   }
   .main__title {
     margin-top: -26rem;
+  }
+  .advantages {
+    margin-top: 26.5rem;
   }
   .services__content {
     -webkit-box-pack: center;
@@ -1502,15 +1526,15 @@ a {
   html {
     font-size: 6px;
   }
-  .nav__list {
-    top: 7%;
+  .nav__open {
+    top: 70%;
   }
   .advantages__content-block {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
   }
   .hero__content {
-    margin-top: 1rem;
+    margin-top: 12rem;
   }
   .hero__video {
     margin-top: 31rem;
@@ -1523,7 +1547,7 @@ a {
   }
   .main__title {
     margin: 0 auto;
-    margin-top: -5rem;
+    margin-top: -16rem;
   }
   .main__text {
     line-height: 3rem;
@@ -1553,8 +1577,8 @@ a {
   .nav__phone {
     display: none;
   }
-  .hero__video-play {
-    top: 77%;
+  .nav__open {
+    top: 80%;
   }
   .footer__line {
     width: 80%;

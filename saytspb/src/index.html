@@ -10,6 +10,7 @@
     rel="stylesheet">
 
   <!-- styles -->
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -21,12 +22,12 @@
 <body>
   <section class="section hero">
 
-    <header class="header">
+    <header class="header  animated fadeInDown">
       <div class="container">
 
         <nav class="nav">
           <div class="nav__container">
-            <a class="nav__logo" href="index.html">Saytsb</a>
+            <a class="nav__logo" href="index.html">Saytspb</a>
             <a class="nav__menu" id="nav-menu">☰</a>
             <div class="nav__list">
 
@@ -71,7 +72,7 @@
         </div>
         <!-- ./social -->
 
-        <div class="main__title">
+        <div class="main__title animated fadeInLeft">
           <h1 class="main__header">Продвижение Сайтов
             <span class="text--primary text--br">в Санкт-Петербурге</span></h1>
           <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -82,7 +83,7 @@
           <button class="button main__button button--primary">Обратный звонок</button>
         </div>
 
-        <div class="main__img">
+        <div class="main__img animated fadeInRight">
           <img src="img/hero/main.png" alt="main">
         </div>
       </div>
@@ -119,12 +120,14 @@
       </div>
       <!-- ./hero__video -->
 
-      <img src="img/hero/video-bg.jpg" alt="video-mask" class="hero__video-mask">
+      <div class="hero__video-wrap">
+        <img src="img/hero/video-bg.jpg" alt="video-mask" class="hero__video-mask">
 
-      <a class="hero__video-play" data-fancybox href="https://www.youtube.com/watch?v=vddBT-xmlZk"></a>
-      <!-- <div class="hero__video-play"></div> -->
-      <!-- <iframe id="ytplayer" type="text/html" width="100%" height="405" src="https://www.youtube.com/embed/M7lc1UVf-VE"
-        frameborder="0" allowfullscreen> -->
+        <a class="hero__video-play wow fadeIn" data-fancybox href="https://www.youtube.com/watch?v=vddBT-xmlZk"></a>
+        <!-- <div class="hero__video-play"></div> -->
+        <!-- <iframe id="ytplayer" type="text/html" width="100%" height="405" src="https://www.youtube.com/embed/M7lc1UVf-VE"
+          frameborder="0" allowfullscreen> -->
+      </div>
 
     </div>
 
@@ -134,49 +137,49 @@
   <section class="section advantages">
     <div class="container">
 
-      <h2 class="title advantages__title">Наши Преимущества</h2>
+      <h2 class="title advantag wow fadeInUp">Наши Преимущества</h2>
       <p class="description advantages__description">Профессиональный подход - расплывчатая формулировка, которой давно
         не принято доверять. Лучший способ рекламы -
         благоприятные отзывы заказчиков и практические примеры работ, которые представлены ниже.</p>
 
       <div class="advantages__content">
 
-        <div class="advantages__content-block">
+        <div class="advantages__content-block wow fadeIn">
           <img src="img/advantages/money-icon.png" alt="icon" class="advantages__content-icon">
           <h3 class="advantages__content-header">Работа без предоплаты</h3>
           <p class="advantages__content-description">Оплата исключительно по факту результатов месячного сотрудничества.
           </p>
         </div>
 
-        <div class="advantages__content-block">
+        <div class="advantages__content-block wow fadeIn">
           <img src="img/advantages/head-icon.png" alt="icon" class="advantages__content-icon">
           <h3 class="advantages__content-header">Идивидуальный подход</h3>
           <p class="advantages__content-description">Возможность сотрудничества по типовым алгоритмам или с совместной
             разработкой индивидуального проекта SEO-продвижения.</p>
         </div>
 
-        <div class="advantages__content-block">
+        <div class="advantages__content-block wow fadeIn">
           <img src="img/advantages/list-icon.png" alt="icon" class="advantages__content-icon">
           <h3 class="advantages__content-header">Готовые решения</h3>
           <p class="advantages__content-description">Готовые решения для различных ресурсов, от узкоспециализированных
             торговых площадок до масштабных коммерческих проектов.</p>
         </div>
 
-        <div class="advantages__content-block">
+        <div class="advantages__content-block wow fadeIn">
           <img src="img/advantages/people-icon.png" alt="icon" class="advantages__content-icon">
           <h3 class="advantages__content-header">Глубокий анализ</h3>
           <p class="advantages__content-description">Глубокий анализ целевой аудитории
             и статегии развития прямых конкурентов.</p>
         </div>
 
-        <div class="advantages__content-block">
+        <div class="advantages__content-block wow fadeIn">
           <img src="img/advantages/newspaper-icon.png" alt="icon" class="advantages__content-icon">
           <h3 class="advantages__content-header">Актуализация ресурса</h3>
           <p class="advantages__content-description">Актуализация ресурса по мере корректировки поисковых алгоритмов.
           </p>
         </div>
 
-        <div class="advantages__content-block">
+        <div class="advantages__content-block wow fadeIn">
           <img src="img/advantages/calendar-icon.png" alt="icon" class="advantages__content-icon">
           <h3 class="advantages__content-header">Ежемесячные отчеты</h3>
           <p class="advantages__content-description">Ежемесячные отчёты о предпринятых усилиях и практических
@@ -194,7 +197,7 @@
   <section class="section services">
     <div class="container">
 
-      <h2 class="title services__title">Наши Услуги</h2>
+      <h2 class="title services__title wow fadeInUp">Наши Услуги</h2>
       <p class="description services__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud ex
@@ -298,7 +301,7 @@
   <section class="section cases">
     <div class="container cases__container">
 
-      <h2 class="title cases__title">Наши Кейсы</h2>
+      <h2 class="title cases__title wow fadeInUp">Наши Кейсы</h2>
       <p class="description cases__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud ex
@@ -426,7 +429,7 @@
   <section class="section feedback">
     <div class="container feedback__container">
 
-      <h2 class="title feedback__title">Отзывы клиентов</h2>
+      <h2 class="title feedback__title wow fadeInUp">Отзывы клиентов</h2>
       <p class="description feedback__description">Если Вы хотите оставить отзыв о проделаной работе, какие-нибудь
         пожелания или свои впечатления, то можете это сделать,
         написав на <a class="link feedback__link" href="#">почту</a> или <a class="link feedback__link"
@@ -502,7 +505,7 @@
   <section class="section news">
     <div class="container news__container">
 
-      <h2 class="title news__title">Последние новости</h2>
+      <h2 class="title news__title wow fadeInUp">Последние новости</h2>
       <p class="description news__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna
         aliqua. Ut enim ad minim veniam, quis nostrud ex
@@ -556,11 +559,12 @@
 
         <!-- Add Arrows -->
         <div class="swiper-button-next news__swiper-button-next"></div>
-        <div class="swiper-button-prev news__swiper-button-prev"></div </div>
+        <div class="swiper-button-prev news__swiper-button-prev"></div>
         <!-- /.news__swiper-container -->
 
       </div>
       <!-- /.container news__container -->
+    </div>
   </section>
   <!-- /.section news -->
 
@@ -570,7 +574,7 @@
       <div class="questions__info-wrap">
 
         <div class="questions__header-wrap">
-          <h2 class="questions__header">Остались вопросы? <br>
+          <h2 class="questions__header wow fadeInLeft">Остались вопросы? <br>
             Напишите нам! <br>
             Отправте Ваше сообщение
             через форму или <span class="link">e-mail</span>.</h2>
@@ -636,7 +640,7 @@
   <footer class="footer">
     <div class="container footer__container">
 
-      <a href="#" class="logo footer__logo">
+      <a href="#" class="logo footer__logo wow fadeIn">
         <img src="img/footer/footer-logo.png" alt="logo" class="logo__icon">
       </a>
 
@@ -661,6 +665,7 @@
   </div>
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
